@@ -206,7 +206,9 @@ Here are a couple of ways to clone this repo:
 
 ### Wireframes
 
-
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/55391556/125696393-3b3e1820-a733-47c8-b20d-ca0559332f53.jpg"/> 
+</p>
 
 ### User-Flow Diagram
 
