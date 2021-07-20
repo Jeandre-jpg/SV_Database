@@ -1,4 +1,4 @@
-# SV_Database
+# Stardew Library
 <h1 align="center">
   <br>
   <img src="https://user-images.githubusercontent.com/55391556/125683169-20d0a26d-dd3c-49f9-8c12-d2dfb08e5bf6.gif" alt="logo" width="200" height="200">
