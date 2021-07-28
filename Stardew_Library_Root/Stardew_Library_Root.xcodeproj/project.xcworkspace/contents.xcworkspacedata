@@ -2,6 +2,36 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/jeandredevilliers/Desktop/Stardew_Library/Stardew_Library_Root/Scenes/HomeView.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../Home/HomeView.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/jeandredevilliers/Desktop/Stardew_Library/Stardew_Library_Root/Views/SkipButtonView.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../Scenes/OnboardingView.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/jeandredevilliers/Desktop/Stardew_Library/Stardew_Library_Root/Views/OnboardingCardView.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/jeandredevilliers/Desktop/Stardew_Library/Stardew_Library_Root/Views/OnboardingView.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../Views/ButtonView.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../GifView.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../Colour/ColourPalette.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../Downloads/dogica/TTF/dogica.ttf">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

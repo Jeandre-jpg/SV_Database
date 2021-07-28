@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct Stardew_Library_RootApp: App {
+    
+    @AppStorage("isOnboarding") var isOnboarding: Bool = true
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            if isOnboarding{
+                OnboardingView()
+            }else{
+            HomeView()
         }
+        
     }
+}
 }

@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C5166F626B16389008342CB /* pixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C5166F526B16389008342CB /* pixel.ttf */; };
+		3C5166FF26B164EB008342CB /* ColourPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5166FE26B164EB008342CB /* ColourPalette.swift */; };
+		3C51670526B16972008342CB /* dogicapixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C51670426B16972008342CB /* dogicapixel.ttf */; };
+		3C51670726B169DB008342CB /* dogica.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C51670626B169DB008342CB /* dogica.otf */; };
+		3C51670926B19561008342CB /* dogicapixel.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C51670826B19561008342CB /* dogicapixel.otf */; };
+		3C51670C26B19688008342CB /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51670B26B19688008342CB /* GifView.swift */; };
+		3C51670F26B197F1008342CB /* chicken.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3C51670E26B197F1008342CB /* chicken.gif */; };
+		3C51671226B1A593008342CB /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51671126B1A592008342CB /* ButtonView.swift */; };
+		3C51671626B1A635008342CB /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51671526B1A635008342CB /* OnboardingCardView.swift */; };
+		3C51671926B1A682008342CB /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51671826B1A682008342CB /* OnboardingView.swift */; };
+		3C51671B26B1ABBC008342CB /* SkipButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51671A26B1ABBC008342CB /* SkipButtonView.swift */; };
+		3C51672126B1B6C9008342CB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51672026B1B6C9008342CB /* HomeView.swift */; };
+		3C9BAF5426B1C9B80097CB06 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BAF5326B1C9B80097CB06 /* Font.swift */; };
+		3C9BAF5626B1DCA60097CB06 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BAF5526B1DCA60097CB06 /* SettingsView.swift */; };
 		3CD58BC226B1468E007F89A6 /* Stardew_Library_RootApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD58BC126B1468E007F89A6 /* Stardew_Library_RootApp.swift */; };
 		3CD58BC426B1468E007F89A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD58BC326B1468E007F89A6 /* ContentView.swift */; };
 		3CD58BC626B14690007F89A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD58BC526B14690007F89A6 /* Assets.xcassets */; };
@@ -14,6 +28,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C5166F526B16389008342CB /* pixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = pixel.ttf; path = ../../../../Downloads/pixel.ttf; sourceTree = "<group>"; };
+		3C5166F826B163A5008342CB /* pixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pixel.ttf; sourceTree = "<group>"; };
+		3C5166FE26B164EB008342CB /* ColourPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColourPalette.swift; sourceTree = "<group>"; };
+		3C51670426B16972008342CB /* dogicapixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = dogicapixel.ttf; path = ../../../../Downloads/dogica/TTF/dogicapixel.ttf; sourceTree = "<group>"; };
+		3C51670626B169DB008342CB /* dogica.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = dogica.otf; path = ../../../../Downloads/dogica/OTF/dogica.otf; sourceTree = "<group>"; };
+		3C51670826B19561008342CB /* dogicapixel.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = dogicapixel.otf; path = ../../../../Downloads/dogica/OTF/dogicapixel.otf; sourceTree = "<group>"; };
+		3C51670B26B19688008342CB /* GifView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = SOURCE_ROOT; };
+		3C51670E26B197F1008342CB /* chicken.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = chicken.gif; path = ../../../chicken.gif; sourceTree = "<group>"; };
+		3C51671126B1A592008342CB /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		3C51671526B1A635008342CB /* OnboardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingCardView.swift; path = /Users/jeandredevilliers/Desktop/Stardew_Library/Stardew_Library_Root/Views/OnboardingCardView.swift; sourceTree = "<absolute>"; };
+		3C51671826B1A682008342CB /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		3C51671A26B1ABBC008342CB /* SkipButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SkipButtonView.swift; path = /Users/jeandredevilliers/Desktop/Stardew_Library/Stardew_Library_Root/Views/SkipButtonView.swift; sourceTree = "<absolute>"; };
+		3C51672026B1B6C9008342CB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = /Users/jeandredevilliers/Desktop/Stardew_Library/Stardew_Library_Root/Scenes/HomeView.swift; sourceTree = "<absolute>"; };
+		3C9BAF5326B1C9B80097CB06 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		3C9BAF5526B1DCA60097CB06 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3CD58BBE26B1468E007F89A6 /* Stardew_Library_Root.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stardew_Library_Root.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD58BC126B1468E007F89A6 /* Stardew_Library_RootApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stardew_Library_RootApp.swift; sourceTree = "<group>"; };
 		3CD58BC326B1468E007F89A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,9 +62,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C5166F726B163A0008342CB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3C51670626B169DB008342CB /* dogica.otf */,
+				3C51670426B16972008342CB /* dogicapixel.ttf */,
+				3C5166F826B163A5008342CB /* pixel.ttf */,
+				3C9BAF5326B1C9B80097CB06 /* Font.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3C5166FD26B164C7008342CB /* Colour */ = {
+			isa = PBXGroup;
+			children = (
+				3C5166FE26B164EB008342CB /* ColourPalette.swift */,
+			);
+			path = Colour;
+			sourceTree = "<group>";
+		};
+		3C51670A26B1965F008342CB /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				3C51670E26B197F1008342CB /* chicken.gif */,
+				3C51670B26B19688008342CB /* GifView.swift */,
+			);
+			path = Gif;
+			sourceTree = "<group>";
+		};
+		3C51671026B1A56B008342CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C51671A26B1ABBC008342CB /* SkipButtonView.swift */,
+				3C51671526B1A635008342CB /* OnboardingCardView.swift */,
+				3C51671126B1A592008342CB /* ButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3C51671726B1A663008342CB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3C51671826B1A682008342CB /* OnboardingView.swift */,
+				3C51672026B1B6C9008342CB /* HomeView.swift */,
+				3C9BAF5526B1DCA60097CB06 /* SettingsView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		3CD58BB526B1468E007F89A6 = {
 			isa = PBXGroup;
 			children = (
+				3C51671726B1A663008342CB /* Scenes */,
+				3C51671026B1A56B008342CB /* Views */,
+				3C51670A26B1965F008342CB /* Gif */,
+				3C5166FD26B164C7008342CB /* Colour */,
+				3C5166F726B163A0008342CB /* Fonts */,
 				3CD58BC026B1468E007F89A6 /* Stardew_Library_Root */,
 				3CD58BBF26B1468E007F89A6 /* Products */,
 			);
@@ -52,8 +134,10 @@
 		3CD58BC026B1468E007F89A6 /* Stardew_Library_Root */ = {
 			isa = PBXGroup;
 			children = (
+				3C51670826B19561008342CB /* dogicapixel.otf */,
 				3CD58BC126B1468E007F89A6 /* Stardew_Library_RootApp.swift */,
 				3CD58BC326B1468E007F89A6 /* ContentView.swift */,
+				3C5166F526B16389008342CB /* pixel.ttf */,
 				3CD58BC526B14690007F89A6 /* Assets.xcassets */,
 				3CD58BCA26B14690007F89A6 /* Info.plist */,
 				3CD58BC726B14690007F89A6 /* Preview Content */,
@@ -126,8 +210,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C51670726B169DB008342CB /* dogica.otf in Resources */,
+				3C51670526B16972008342CB /* dogicapixel.ttf in Resources */,
 				3CD58BC926B14690007F89A6 /* Preview Assets.xcassets in Resources */,
+				3C51670926B19561008342CB /* dogicapixel.otf in Resources */,
 				3CD58BC626B14690007F89A6 /* Assets.xcassets in Resources */,
+				3C51670F26B197F1008342CB /* chicken.gif in Resources */,
+				3C5166F626B16389008342CB /* pixel.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +227,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C51672126B1B6C9008342CB /* HomeView.swift in Sources */,
+				3C5166FF26B164EB008342CB /* ColourPalette.swift in Sources */,
+				3C9BAF5426B1C9B80097CB06 /* Font.swift in Sources */,
+				3C51670C26B19688008342CB /* GifView.swift in Sources */,
+				3C51671226B1A593008342CB /* ButtonView.swift in Sources */,
+				3C51671626B1A635008342CB /* OnboardingCardView.swift in Sources */,
 				3CD58BC426B1468E007F89A6 /* ContentView.swift in Sources */,
+				3C51671B26B1ABBC008342CB /* SkipButtonView.swift in Sources */,
 				3CD58BC226B1468E007F89A6 /* Stardew_Library_RootApp.swift in Sources */,
+				3C51671926B1A682008342CB /* OnboardingView.swift in Sources */,
+				3C9BAF5626B1DCA60097CB06 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
