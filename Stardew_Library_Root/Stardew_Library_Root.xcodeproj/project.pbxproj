@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C44DC9926B05D6300FFBF62 /* Stardew_LibraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C44DC9826B05D6300FFBF62 /* Stardew_LibraryApp.swift */; };
-		3C44DC9B26B05D6300FFBF62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C44DC9A26B05D6300FFBF62 /* ContentView.swift */; };
-		3C44DC9D26B05D6500FFBF62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C44DC9C26B05D6500FFBF62 /* Assets.xcassets */; };
-		3C44DCA026B05D6500FFBF62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C44DC9F26B05D6500FFBF62 /* Preview Assets.xcassets */; };
+		3CD58BC226B1468E007F89A6 /* Stardew_Library_RootApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD58BC126B1468E007F89A6 /* Stardew_Library_RootApp.swift */; };
+		3CD58BC426B1468E007F89A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD58BC326B1468E007F89A6 /* ContentView.swift */; };
+		3CD58BC626B14690007F89A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD58BC526B14690007F89A6 /* Assets.xcassets */; };
+		3CD58BC926B14690007F89A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD58BC826B14690007F89A6 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3C44DC9526B05D6300FFBF62 /* Stardew_Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stardew_Library.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C44DC9826B05D6300FFBF62 /* Stardew_LibraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stardew_LibraryApp.swift; sourceTree = "<group>"; };
-		3C44DC9A26B05D6300FFBF62 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3C44DC9C26B05D6500FFBF62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3C44DC9F26B05D6500FFBF62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3C44DCA126B05D6500FFBF62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CD58BBE26B1468E007F89A6 /* Stardew_Library_Root.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stardew_Library_Root.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD58BC126B1468E007F89A6 /* Stardew_Library_RootApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stardew_Library_RootApp.swift; sourceTree = "<group>"; };
+		3CD58BC326B1468E007F89A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3CD58BC526B14690007F89A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CD58BC826B14690007F89A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3CD58BCA26B14690007F89A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3C44DC9226B05D6300FFBF62 /* Frameworks */ = {
+		3CD58BBB26B1468E007F89A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,38 +33,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C44DC8C26B05D6300FFBF62 = {
+		3CD58BB526B1468E007F89A6 = {
 			isa = PBXGroup;
 			children = (
-				3C44DC9726B05D6300FFBF62 /* Stardew_Library */,
-				3C44DC9626B05D6300FFBF62 /* Products */,
+				3CD58BC026B1468E007F89A6 /* Stardew_Library_Root */,
+				3CD58BBF26B1468E007F89A6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3C44DC9626B05D6300FFBF62 /* Products */ = {
+		3CD58BBF26B1468E007F89A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3C44DC9526B05D6300FFBF62 /* Stardew_Library.app */,
+				3CD58BBE26B1468E007F89A6 /* Stardew_Library_Root.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3C44DC9726B05D6300FFBF62 /* Stardew_Library */ = {
+		3CD58BC026B1468E007F89A6 /* Stardew_Library_Root */ = {
 			isa = PBXGroup;
 			children = (
-				3C44DC9826B05D6300FFBF62 /* Stardew_LibraryApp.swift */,
-				3C44DC9A26B05D6300FFBF62 /* ContentView.swift */,
-				3C44DC9C26B05D6500FFBF62 /* Assets.xcassets */,
-				3C44DCA126B05D6500FFBF62 /* Info.plist */,
-				3C44DC9E26B05D6500FFBF62 /* Preview Content */,
+				3CD58BC126B1468E007F89A6 /* Stardew_Library_RootApp.swift */,
+				3CD58BC326B1468E007F89A6 /* ContentView.swift */,
+				3CD58BC526B14690007F89A6 /* Assets.xcassets */,
+				3CD58BCA26B14690007F89A6 /* Info.plist */,
+				3CD58BC726B14690007F89A6 /* Preview Content */,
 			);
-			path = Stardew_Library;
+			path = Stardew_Library_Root;
 			sourceTree = "<group>";
 		};
-		3C44DC9E26B05D6500FFBF62 /* Preview Content */ = {
+		3CD58BC726B14690007F89A6 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				3C44DC9F26B05D6500FFBF62 /* Preview Assets.xcassets */,
+				3CD58BC826B14690007F89A6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -72,38 +72,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3C44DC9426B05D6300FFBF62 /* Stardew_Library */ = {
+		3CD58BBD26B1468E007F89A6 /* Stardew_Library_Root */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3C44DCA426B05D6500FFBF62 /* Build configuration list for PBXNativeTarget "Stardew_Library" */;
+			buildConfigurationList = 3CD58BCD26B14690007F89A6 /* Build configuration list for PBXNativeTarget "Stardew_Library_Root" */;
 			buildPhases = (
-				3C44DC9126B05D6300FFBF62 /* Sources */,
-				3C44DC9226B05D6300FFBF62 /* Frameworks */,
-				3C44DC9326B05D6300FFBF62 /* Resources */,
+				3CD58BBA26B1468E007F89A6 /* Sources */,
+				3CD58BBB26B1468E007F89A6 /* Frameworks */,
+				3CD58BBC26B1468E007F89A6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Stardew_Library;
-			productName = Stardew_Library;
-			productReference = 3C44DC9526B05D6300FFBF62 /* Stardew_Library.app */;
+			name = Stardew_Library_Root;
+			productName = Stardew_Library_Root;
+			productReference = 3CD58BBE26B1468E007F89A6 /* Stardew_Library_Root.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3C44DC8D26B05D6300FFBF62 /* Project object */ = {
+		3CD58BB626B1468E007F89A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					3C44DC9426B05D6300FFBF62 = {
+					3CD58BBD26B1468E007F89A6 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
-			buildConfigurationList = 3C44DC9026B05D6300FFBF62 /* Build configuration list for PBXProject "Stardew_Library" */;
+			buildConfigurationList = 3CD58BB926B1468E007F89A6 /* Build configuration list for PBXProject "Stardew_Library_Root" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,42 +111,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 3C44DC8C26B05D6300FFBF62;
-			productRefGroup = 3C44DC9626B05D6300FFBF62 /* Products */;
+			mainGroup = 3CD58BB526B1468E007F89A6;
+			productRefGroup = 3CD58BBF26B1468E007F89A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3C44DC9426B05D6300FFBF62 /* Stardew_Library */,
+				3CD58BBD26B1468E007F89A6 /* Stardew_Library_Root */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3C44DC9326B05D6300FFBF62 /* Resources */ = {
+		3CD58BBC26B1468E007F89A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C44DCA026B05D6500FFBF62 /* Preview Assets.xcassets in Resources */,
-				3C44DC9D26B05D6500FFBF62 /* Assets.xcassets in Resources */,
+				3CD58BC926B14690007F89A6 /* Preview Assets.xcassets in Resources */,
+				3CD58BC626B14690007F89A6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3C44DC9126B05D6300FFBF62 /* Sources */ = {
+		3CD58BBA26B1468E007F89A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C44DC9B26B05D6300FFBF62 /* ContentView.swift in Sources */,
-				3C44DC9926B05D6300FFBF62 /* Stardew_LibraryApp.swift in Sources */,
+				3CD58BC426B1468E007F89A6 /* ContentView.swift in Sources */,
+				3CD58BC226B1468E007F89A6 /* Stardew_Library_RootApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3C44DCA226B05D6500FFBF62 /* Debug */ = {
+		3CD58BCB26B14690007F89A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -207,7 +207,7 @@
 			};
 			name = Debug;
 		};
-		3C44DCA326B05D6500FFBF62 /* Release */ = {
+		3CD58BCC26B14690007F89A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -262,42 +262,42 @@
 			};
 			name = Release;
 		};
-		3C44DCA526B05D6500FFBF62 /* Debug */ = {
+		3CD58BCE26B14690007F89A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Stardew_Library/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Stardew_Library_Root/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Stardew_Library/Info.plist;
+				INFOPLIST_FILE = Stardew_Library_Root/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.openwindow.Stardew-Library";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.openwindow.Stardew-Library-Root";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		3C44DCA626B05D6500FFBF62 /* Release */ = {
+		3CD58BCF26B14690007F89A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Stardew_Library/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Stardew_Library_Root/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Stardew_Library/Info.plist;
+				INFOPLIST_FILE = Stardew_Library_Root/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.openwindow.Stardew-Library";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.openwindow.Stardew-Library-Root";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,25 +307,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3C44DC9026B05D6300FFBF62 /* Build configuration list for PBXProject "Stardew_Library" */ = {
+		3CD58BB926B1468E007F89A6 /* Build configuration list for PBXProject "Stardew_Library_Root" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3C44DCA226B05D6500FFBF62 /* Debug */,
-				3C44DCA326B05D6500FFBF62 /* Release */,
+				3CD58BCB26B14690007F89A6 /* Debug */,
+				3CD58BCC26B14690007F89A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3C44DCA426B05D6500FFBF62 /* Build configuration list for PBXNativeTarget "Stardew_Library" */ = {
+		3CD58BCD26B14690007F89A6 /* Build configuration list for PBXNativeTarget "Stardew_Library_Root" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3C44DCA526B05D6500FFBF62 /* Debug */,
-				3C44DCA626B05D6500FFBF62 /* Release */,
+				3CD58BCE26B14690007F89A6 /* Debug */,
+				3CD58BCF26B14690007F89A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3C44DC8D26B05D6300FFBF62 /* Project object */;
+	rootObject = 3CD58BB626B1468E007F89A6 /* Project object */;
 }
