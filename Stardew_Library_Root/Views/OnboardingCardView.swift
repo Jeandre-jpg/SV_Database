@@ -50,10 +50,9 @@ struct OnboardingCardView: View {
                 
               
                 
-                SkipButtonView()
-                    .padding(.vertical, 20)
+              
                 
-                StartButtonView()
+                ButtonView()
                     .padding(.vertical, 20)
                 
                

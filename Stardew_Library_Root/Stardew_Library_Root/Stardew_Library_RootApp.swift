@@ -19,8 +19,11 @@ struct Stardew_Library_RootApp: App {
                 OnboardingView()
             }else{
             HomeView()
+
+        
         }
         
     }
 }
 }
+

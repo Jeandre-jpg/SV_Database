@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct StartButtonView: View {
+struct ButtonView: View {
     
     @AppStorage("isOnboarding") var isOnboarding: Bool?
     
@@ -30,9 +30,9 @@ struct StartButtonView: View {
     }
 }
 
-struct StartButtonView_Previews: PreviewProvider {
+struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        StartButtonView()
+        ButtonView()
             .previewLayout(.sizeThatFits)
     }
 }

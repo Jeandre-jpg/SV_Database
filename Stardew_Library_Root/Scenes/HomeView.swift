@@ -49,10 +49,24 @@ struct HomeView: View {
                     .frame(width: 350, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 }
-                
+               
                 VStack {
                            HStack {
+                            VStack{
                             cell(header: "Items Shipped 📦",color: Color(colour4))
+                                
+                               
+                                NavigationView{
+                                NavigationLink(destination: ItemsView()){
+                                    Text("Learn More")
+                                        .padding()
+                                        .foregroundColor(.white)
+                                        .background(Color.pink)
+                                }
+                               
+                                }
+                                
+                            }
                            
                             cell(header: "Fish 🐟",color: Color(colour5))
                            }
@@ -72,13 +86,13 @@ struct HomeView: View {
                }
 
     
-            
+        }
             
             
           
     }
         
-           }
+        
     
 
 struct HomeView_Previews: PreviewProvider {
