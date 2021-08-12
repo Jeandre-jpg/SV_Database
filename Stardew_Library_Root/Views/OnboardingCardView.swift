@@ -20,12 +20,9 @@ struct OnboardingCardView: View {
             
             
             LogoImage()
-           
-            Image(systemName: image)
-                .renderingMode(.original)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 150, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .cornerRadius(20)
+                .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+        
                
             
             Text(title)
@@ -65,8 +62,12 @@ struct OnboardingCardView: View {
              
         }
         .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-        .background(Color(color2))
-        .edgesIgnoringSafeArea(.all)
+        .background(
+            Image("food_background")
+                .frame(width: 400, height: 500, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .aspectRatio(contentMode: .fill)
+                .edgesIgnoringSafeArea(.all))
+    
        
     }
 }
@@ -88,4 +89,15 @@ struct OnboardingCardView_Previews: PreviewProvider {
                 
         }
     }
+
+struct FoodImage : View {
+    
+    var body: some View {
+        Image("food_background")
+            .resizable()
+            .frame(width: 500, height: 500)
+            .aspectRatio(contentMode: .fit)
+            
+    }
+}
 

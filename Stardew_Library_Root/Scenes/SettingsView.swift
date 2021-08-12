@@ -36,10 +36,11 @@ struct SettingsView: View {
                     
                   
                 }
-                
+                Divider()
                 HStack(spacing:20){
                     
                     MoonImage()
+                  
            
                 Toggle(isOn: $notificationsOn) {
                                     Text("Change Appearance")
@@ -57,7 +58,7 @@ struct SettingsView: View {
             
             
             
-            VStack(spacing: 5){
+            VStack(spacing: 1){
                 
                 Spacer()
                 
