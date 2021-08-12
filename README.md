@@ -294,3 +294,6 @@ Project Link: [https://github.com/Jeandre-jpg/SV_Database](https://github.com/Je
 
 
 ## Acknowledgements
+1. https://mobiraft.com/ios/swiftui/how-to-add-splash-screen-in-swiftui/
+2. https://github.com/swiftgif/SwiftGif
+3. https://www.youtube.com/watch?v=Rm61mxcSD4U
