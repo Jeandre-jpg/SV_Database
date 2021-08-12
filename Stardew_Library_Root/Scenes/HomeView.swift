@@ -176,3 +176,4 @@ func cell(header: String, color: Color) -> some View {
     .cornerRadius(10)
     .padding(10)
 }
+

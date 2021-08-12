@@ -21,11 +21,11 @@ struct OnboardingCardView: View {
             
             LogoImage()
            
-//            Image(systemName: image)
-//                .renderingMode(.original)
-//                .resizable()
-//                .scaledToFit()
-//                .frame(width: 150, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            Image(systemName: image)
+                .renderingMode(.original)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 150, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                
             
             Text(title)

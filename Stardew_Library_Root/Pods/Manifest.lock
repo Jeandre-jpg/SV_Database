@@ -1,0 +1,20 @@
+PODS:
+  - FLAnimatedImage (1.0.16)
+  - SSSwiftUIGIFView (1.0.0)
+
+DEPENDENCIES:
+  - FLAnimatedImage
+  - SSSwiftUIGIFView
+
+SPEC REPOS:
+  trunk:
+    - FLAnimatedImage
+    - SSSwiftUIGIFView
+
+SPEC CHECKSUMS:
+  FLAnimatedImage: 8f3e854ebf9680b71f0b6e700939687fc4d82b4b
+  SSSwiftUIGIFView: f109262cd0baff190b58b519c0e94f7622c428d4
+
+PODFILE CHECKSUM: 25dd68f81ea5cbb479c764f9c1ab5cbeaed88128
+
+COCOAPODS: 1.10.2

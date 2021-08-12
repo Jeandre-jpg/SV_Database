@@ -18,7 +18,7 @@ struct ButtonView: View {
             
         }, label: {
             HStack(spacing: 20){
-                Text("Next")
+                Text("Skip")
                 Image(systemName: "arrow.right.circle")
                     .imageScale(.large)
             }

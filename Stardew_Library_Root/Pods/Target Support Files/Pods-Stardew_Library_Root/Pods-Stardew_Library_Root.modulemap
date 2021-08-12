@@ -1,0 +1,6 @@
+framework module Pods_Stardew_Library_Root {
+  umbrella header "Pods-Stardew_Library_Root-umbrella.h"
+
+  export *
+  module * { export * }
+}
