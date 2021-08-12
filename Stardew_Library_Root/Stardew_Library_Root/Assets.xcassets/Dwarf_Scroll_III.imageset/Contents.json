@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Dwarf_Scroll_III.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Dwarf_Scroll_III-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Dwarf_Scroll_III-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

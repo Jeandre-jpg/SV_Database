@@ -18,7 +18,7 @@ struct Stardew_Library_RootApp: App {
             if isOnboarding{
                 OnboardingView()
             }else{
-            HomeView()
+            ContentView()
 
         
         }

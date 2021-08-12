@@ -27,8 +27,6 @@ struct SettingsView: View {
             VStack {
                 HStack{
                 
-                    SettingsImage()
-                    
                 VStack {
             
                     cell(header: "Settings",color: Color(colour8), text: "The official unofficial Stardew Valley Database")

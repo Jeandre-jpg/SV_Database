@@ -38,7 +38,8 @@ struct ItemShippedDetailView: View {
                     .padding()
                 Text(info)
                     .font(.subheadline)
-                Divider()
+                    .padding()
+               
                 
                 HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100){
                     VStack(alignment: .leading, spacing: 10){
@@ -97,7 +98,7 @@ struct ItemShippedDetailView: View {
             
                 }
                 
-              
+                Divider()
                 
                 VStack(alignment: .leading, spacing: 10){
                         Text("Crafting")

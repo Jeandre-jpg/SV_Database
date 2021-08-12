@@ -17,7 +17,18 @@
 		3C51671626B1A635008342CB /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51671526B1A635008342CB /* OnboardingCardView.swift */; };
 		3C51671926B1A682008342CB /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51671826B1A682008342CB /* OnboardingView.swift */; };
 		3C51672126B1B6C9008342CB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51672026B1B6C9008342CB /* HomeView.swift */; };
-		3C87259826BBC8E800C0ECE5 /* ItemsShipped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C87259726BBC8E800C0ECE5 /* ItemsShipped.swift */; };
+		3C630A0126C27880003C7C16 /* FishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C630A0026C27880003C7C16 /* FishView.swift */; };
+		3C630A0326C278AD003C7C16 /* FishData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C630A0226C278AD003C7C16 /* FishData.swift */; };
+		3C630A0526C2795B003C7C16 /* FishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C630A0426C2795B003C7C16 /* FishDetailView.swift */; };
+		3C630A0B26C28401003C7C16 /* ArtefactsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C630A0A26C28401003C7C16 /* ArtefactsDetailView.swift */; };
+		3C630A0D26C2840E003C7C16 /* ArtefactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C630A0C26C2840E003C7C16 /* ArtefactsView.swift */; };
+		3C630A0F26C2841A003C7C16 /* ArtefactsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C630A0E26C2841A003C7C16 /* ArtefactsData.swift */; };
+		3C630A1526C2B578003C7C16 /* MineralsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C630A1426C2B578003C7C16 /* MineralsData.swift */; };
+		3C630A1726C2B5DF003C7C16 /* MineralsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C630A1626C2B5DF003C7C16 /* MineralsView.swift */; };
+		3C630A1926C2B62F003C7C16 /* MineralsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C630A1826C2B62F003C7C16 /* MineralsDetailView.swift */; };
+		3C630A1D26C2BC59003C7C16 /* CookingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C630A1C26C2BC59003C7C16 /* CookingData.swift */; };
+		3C630A1F26C2BCFC003C7C16 /* CookingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C630A1E26C2BCFC003C7C16 /* CookingDetailView.swift */; };
+		3C630A2126C2BDC7003C7C16 /* CookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C630A2026C2BDC7003C7C16 /* CookingView.swift */; };
 		3C87259A26BBC96D00C0ECE5 /* ItemsShippedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C87259926BBC96D00C0ECE5 /* ItemsShippedData.swift */; };
 		3C87259C26BBDD7F00C0ECE5 /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C87259B26BBDD7F00C0ECE5 /* ItemsView.swift */; };
 		3C8725A026BBE38D00C0ECE5 /* ItemShippedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C87259F26BBE38D00C0ECE5 /* ItemShippedDetailView.swift */; };
@@ -44,7 +55,18 @@
 		3C51671526B1A635008342CB /* OnboardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingCardView.swift; path = /Users/jeandredevilliers/Desktop/Stardew_Library/Stardew_Library_Root/Views/OnboardingCardView.swift; sourceTree = "<absolute>"; };
 		3C51671826B1A682008342CB /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		3C51672026B1B6C9008342CB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = /Users/jeandredevilliers/Desktop/Stardew_Library/Stardew_Library_Root/Scenes/HomeView.swift; sourceTree = "<absolute>"; };
-		3C87259726BBC8E800C0ECE5 /* ItemsShipped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsShipped.swift; sourceTree = "<group>"; };
+		3C630A0026C27880003C7C16 /* FishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishView.swift; sourceTree = "<group>"; };
+		3C630A0226C278AD003C7C16 /* FishData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishData.swift; sourceTree = "<group>"; };
+		3C630A0426C2795B003C7C16 /* FishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailView.swift; sourceTree = "<group>"; };
+		3C630A0A26C28401003C7C16 /* ArtefactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtefactsDetailView.swift; sourceTree = "<group>"; };
+		3C630A0C26C2840E003C7C16 /* ArtefactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtefactsView.swift; sourceTree = "<group>"; };
+		3C630A0E26C2841A003C7C16 /* ArtefactsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtefactsData.swift; sourceTree = "<group>"; };
+		3C630A1426C2B578003C7C16 /* MineralsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineralsData.swift; sourceTree = "<group>"; };
+		3C630A1626C2B5DF003C7C16 /* MineralsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineralsView.swift; sourceTree = "<group>"; };
+		3C630A1826C2B62F003C7C16 /* MineralsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineralsDetailView.swift; sourceTree = "<group>"; };
+		3C630A1C26C2BC59003C7C16 /* CookingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingData.swift; sourceTree = "<group>"; };
+		3C630A1E26C2BCFC003C7C16 /* CookingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingDetailView.swift; sourceTree = "<group>"; };
+		3C630A2026C2BDC7003C7C16 /* CookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingView.swift; sourceTree = "<group>"; };
 		3C87259926BBC96D00C0ECE5 /* ItemsShippedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsShippedData.swift; sourceTree = "<group>"; };
 		3C87259B26BBDD7F00C0ECE5 /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
 		3C87259F26BBE38D00C0ECE5 /* ItemShippedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemShippedDetailView.swift; sourceTree = "<group>"; };
@@ -108,6 +130,10 @@
 				3C51671126B1A592008342CB /* ButtonView.swift */,
 				3C87259F26BBE38D00C0ECE5 /* ItemShippedDetailView.swift */,
 				3C8725A526BC003900C0ECE5 /* MoreButtonView.swift */,
+				3C630A0426C2795B003C7C16 /* FishDetailView.swift */,
+				3C630A0A26C28401003C7C16 /* ArtefactsDetailView.swift */,
+				3C630A1826C2B62F003C7C16 /* MineralsDetailView.swift */,
+				3C630A1E26C2BCFC003C7C16 /* CookingDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,6 +145,10 @@
 				3C51672026B1B6C9008342CB /* HomeView.swift */,
 				3C9BAF5526B1DCA60097CB06 /* SettingsView.swift */,
 				3C87259B26BBDD7F00C0ECE5 /* ItemsView.swift */,
+				3C630A0026C27880003C7C16 /* FishView.swift */,
+				3C630A0C26C2840E003C7C16 /* ArtefactsView.swift */,
+				3C630A1626C2B5DF003C7C16 /* MineralsView.swift */,
+				3C630A2026C2BDC7003C7C16 /* CookingView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -127,22 +157,17 @@
 			isa = PBXGroup;
 			children = (
 				3C87259926BBC96D00C0ECE5 /* ItemsShippedData.swift */,
+				3C630A0226C278AD003C7C16 /* FishData.swift */,
+				3C630A0E26C2841A003C7C16 /* ArtefactsData.swift */,
+				3C630A1426C2B578003C7C16 /* MineralsData.swift */,
+				3C630A1C26C2BC59003C7C16 /* CookingData.swift */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		3C87259626BBC8A700C0ECE5 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				3C87259726BBC8E800C0ECE5 /* ItemsShipped.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		3CD58BB526B1468E007F89A6 = {
 			isa = PBXGroup;
 			children = (
-				3C87259626BBC8A700C0ECE5 /* Models */,
 				3C87259326BBC7F700C0ECE5 /* Data */,
 				3C51671726B1A663008342CB /* Scenes */,
 				3C51671026B1A56B008342CB /* Views */,
@@ -258,21 +283,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C630A1726C2B5DF003C7C16 /* MineralsView.swift in Sources */,
+				3C630A0B26C28401003C7C16 /* ArtefactsDetailView.swift in Sources */,
+				3C630A1D26C2BC59003C7C16 /* CookingData.swift in Sources */,
+				3C630A0526C2795B003C7C16 /* FishDetailView.swift in Sources */,
 				3C51672126B1B6C9008342CB /* HomeView.swift in Sources */,
 				3C5166FF26B164EB008342CB /* ColourPalette.swift in Sources */,
+				3C630A1526C2B578003C7C16 /* MineralsData.swift in Sources */,
 				3C9BAF5426B1C9B80097CB06 /* Font.swift in Sources */,
+				3C630A0F26C2841A003C7C16 /* ArtefactsData.swift in Sources */,
 				3C87259A26BBC96D00C0ECE5 /* ItemsShippedData.swift in Sources */,
 				3C51670C26B19688008342CB /* GifView.swift in Sources */,
+				3C630A0126C27880003C7C16 /* FishView.swift in Sources */,
 				3CFCA78D26B982C300058BDF /* ViewController.swift in Sources */,
+				3C630A0326C278AD003C7C16 /* FishData.swift in Sources */,
 				3C51671226B1A593008342CB /* ButtonView.swift in Sources */,
+				3C630A2126C2BDC7003C7C16 /* CookingView.swift in Sources */,
+				3C630A1F26C2BCFC003C7C16 /* CookingDetailView.swift in Sources */,
 				3C87259C26BBDD7F00C0ECE5 /* ItemsView.swift in Sources */,
 				3C51671626B1A635008342CB /* OnboardingCardView.swift in Sources */,
 				3C8725A626BC003900C0ECE5 /* MoreButtonView.swift in Sources */,
 				3C8725A026BBE38D00C0ECE5 /* ItemShippedDetailView.swift in Sources */,
 				3CD58BC426B1468E007F89A6 /* ContentView.swift in Sources */,
-				3C87259826BBC8E800C0ECE5 /* ItemsShipped.swift in Sources */,
 				3CD58BC226B1468E007F89A6 /* Stardew_Library_RootApp.swift in Sources */,
 				3C51671926B1A682008342CB /* OnboardingView.swift in Sources */,
+				3C630A1926C2B62F003C7C16 /* MineralsDetailView.swift in Sources */,
+				3C630A0D26C2840E003C7C16 /* ArtefactsView.swift in Sources */,
 				3C9BAF5626B1DCA60097CB06 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

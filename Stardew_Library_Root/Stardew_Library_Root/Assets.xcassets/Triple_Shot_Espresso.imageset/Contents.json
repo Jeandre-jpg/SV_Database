@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Triple_Shot_Espresso.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Triple_Shot_Espresso-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Triple_Shot_Espresso-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
