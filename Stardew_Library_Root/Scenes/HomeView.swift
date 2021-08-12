@@ -20,7 +20,7 @@ struct HomeView: View {
        
         NavigationView {
             ZStack {
-                Color(colour3)
+                BackgroundImageMoon()
                     .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         
         VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 20){
@@ -30,6 +30,7 @@ struct HomeView: View {
             
     Text("Welcome!").font(Font.custom("pixel", size: 33))
         .padding()
+        .foregroundColor(.white)
             
             
         }
@@ -45,6 +46,7 @@ struct HomeView: View {
             Text("The application will be connected to the game, Stardew Valley. The app will show some of the collectables within the game, from Items Shipped, Fish, Artefacts, Minerals and Cooking. This library system will also then show each categories information on a certain object.")
                 .font(Font.custom("dogicapixel", size: 15))
                 .frame(width: 350, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .foregroundColor(.white)
             
             }
            
@@ -175,5 +177,16 @@ func cell(header: String, color: Color) -> some View {
     .background(color)
     .cornerRadius(10)
     .padding(10)
+}
+
+struct BackgroundImageMoon : View {
+    
+    var body: some View {
+        Image("moon_background")
+            .resizable()
+            .frame(width: .infinity, height: .infinity)
+            .aspectRatio(contentMode: .fill)
+            .edgesIgnoringSafeArea(.all)
+    }
 }
 

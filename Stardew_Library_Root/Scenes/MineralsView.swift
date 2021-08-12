@@ -28,7 +28,7 @@ struct MineralsView : View {
 
                         
                     }
-               }.navigationBarTitle("Cooking", displayMode: .inline)
+               }.navigationBarTitle("Minerals", displayMode: .inline)
             
             
             .toolbar {
