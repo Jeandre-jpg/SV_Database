@@ -10,11 +10,14 @@ import SwiftUI
 
 struct MineralsView : View {
     var minerals: [MineralsData] = testMineralsData
-    
+    @State private var searchText = ""
     var body: some View {
-        NavigationView {
-          
-            List(minerals) { mineral in
+        NavigationView{
+        
+            VStack(spacing: 20) {
+            SearchBar(text: $searchText)
+                .padding(.top, 20)
+            List(minerals.filter({ searchText.isEmpty ? true : $0.name.contains(searchText) })) { mineral in
                 MineralsShippedCell(mineral: mineral)
             }.toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -29,29 +32,9 @@ struct MineralsView : View {
                         
                     }
                }.navigationBarTitle("Minerals", displayMode: .inline)
-            
-            
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-           HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100) {
-                    NavigationLink(destination: CookingView()) {
-                        Image(systemName: "arrow.right.circle")
-                            .font(.title)
-                            .padding(100)
-                    }
-               
-           }
-       
-
-
-            }
-       
-        
-        
-      
-}
-        }
+        }.navigationBarColor(backgroundColor: .systemIndigo, tintColor: .white)
     }
+}
 }
 
 #if DEBUG

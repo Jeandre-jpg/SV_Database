@@ -19,10 +19,12 @@ struct OnboardingCardView: View {
         VStack(alignment: .center){
             
             
-            LogoImage()
-                .cornerRadius(20)
-                .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-        
+            Image(systemName: image)
+                .renderingMode(.original)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 150, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 2, x: 2, y: 2)
                
             
             Text(title)
@@ -36,11 +38,12 @@ struct OnboardingCardView: View {
             
             Text(description)
                 .foregroundColor(.black)
-                .font(Font.custom("dogica", size: 20))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 30)
                 .frame(maxWidth: 480)
+               
                 .padding()
+            
             
             
             HStack(spacing: 20) {
@@ -58,15 +61,14 @@ struct OnboardingCardView: View {
             
             
             
+            
            
              
-        }
-        .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-        .background(
-            Image("food_background")
-                .frame(width: 400, height: 500, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .aspectRatio(contentMode: .fill)
-                .edgesIgnoringSafeArea(.all))
+        }.background(Image("background_white")
+                        .resizable()
+                        .frame(width: 400, height: 850)
+                        .aspectRatio(contentMode: .fill)
+                        .cornerRadius(20))
     
        
     }
@@ -74,30 +76,7 @@ struct OnboardingCardView: View {
 
 struct OnboardingCardView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingCardView(image: "stardew_valley_logo", title: "Breathe new life into the Valley", description: "The official unofficial Stardew Valley Databas.e")
-    }
-}
-
-
-    struct LogoImage : View {
-        
-        var body: some View {
-            Image("stardew_valley_logo")
-                .resizable()
-                .frame(width: 250, height: 250)
-                .aspectRatio(contentMode: .fit)
-                
-        }
-    }
-
-struct FoodImage : View {
-    
-    var body: some View {
-        Image("food_background")
-            .resizable()
-            .frame(width: 500, height: 500)
-            .aspectRatio(contentMode: .fit)
-            
+        OnboardingCardView(image: "chicken", title: "Breathe new life into the Valley", description: "The official unofficial Stardew Valley Database").previewLayout(.fixed(width: 320, height: 640))
     }
 }
 

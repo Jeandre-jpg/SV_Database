@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		3C5166F626B16389008342CB /* pixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C5166F526B16389008342CB /* pixel.ttf */; };
 		3C5166FF26B164EB008342CB /* ColourPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5166FE26B164EB008342CB /* ColourPalette.swift */; };
-		3C51670526B16972008342CB /* dogicapixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C51670426B16972008342CB /* dogicapixel.ttf */; };
-		3C51670726B169DB008342CB /* dogica.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C51670626B169DB008342CB /* dogica.otf */; };
-		3C51670926B19561008342CB /* dogicapixel.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C51670826B19561008342CB /* dogicapixel.otf */; };
 		3C51670C26B19688008342CB /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51670B26B19688008342CB /* GifView.swift */; };
 		3C51671226B1A593008342CB /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51671126B1A592008342CB /* ButtonView.swift */; };
 		3C51671626B1A635008342CB /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51671526B1A635008342CB /* OnboardingCardView.swift */; };
@@ -39,17 +36,27 @@
 		3CD58BC426B1468E007F89A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD58BC326B1468E007F89A6 /* ContentView.swift */; };
 		3CD58BC626B14690007F89A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD58BC526B14690007F89A6 /* Assets.xcassets */; };
 		3CD58BC926B14690007F89A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD58BC826B14690007F89A6 /* Preview Assets.xcassets */; };
+		3CDDB0F326C55547006CF9F5 /* Stardew_Library_RootUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDDB0F226C55547006CF9F5 /* Stardew_Library_RootUITests.swift */; };
+		3CDDB0FB26C558B8006CF9F5 /* NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDDB0FA26C558B8006CF9F5 /* NavigationBarColor.swift */; };
 		3CFCA78D26B982C300058BDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFCA78C26B982C300058BDF /* ViewController.swift */; };
 		3CFCA78F26B9837C00058BDF /* chicken.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3CFCA78E26B9837C00058BDF /* chicken.gif */; };
+		3CFCDAFC26CBC81800BC6E7C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFCDAFB26CBC81800BC6E7C /* SearchBar.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CDDB0F526C55547006CF9F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CD58BB626B1468E007F89A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CD58BBD26B1468E007F89A6;
+			remoteInfo = Stardew_Library_Root;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3C5166F526B16389008342CB /* pixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = pixel.ttf; path = ../../../../Downloads/pixel.ttf; sourceTree = "<group>"; };
 		3C5166F826B163A5008342CB /* pixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pixel.ttf; sourceTree = "<group>"; };
 		3C5166FE26B164EB008342CB /* ColourPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColourPalette.swift; sourceTree = "<group>"; };
-		3C51670426B16972008342CB /* dogicapixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = dogicapixel.ttf; path = ../../../../Downloads/dogica/TTF/dogicapixel.ttf; sourceTree = "<group>"; };
-		3C51670626B169DB008342CB /* dogica.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = dogica.otf; path = ../../../../Downloads/dogica/OTF/dogica.otf; sourceTree = "<group>"; };
-		3C51670826B19561008342CB /* dogicapixel.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = dogicapixel.otf; path = ../../../../Downloads/dogica/OTF/dogicapixel.otf; sourceTree = "<group>"; };
 		3C51670B26B19688008342CB /* GifView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = SOURCE_ROOT; };
 		3C51671126B1A592008342CB /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		3C51671526B1A635008342CB /* OnboardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingCardView.swift; path = /Users/jeandredevilliers/Desktop/Stardew_Library/Stardew_Library_Root/Views/OnboardingCardView.swift; sourceTree = "<absolute>"; };
@@ -79,12 +86,26 @@
 		3CD58BC526B14690007F89A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CD58BC826B14690007F89A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3CD58BCA26B14690007F89A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CDDB0F026C55547006CF9F5 /* Stardew_Library_RootUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Stardew_Library_RootUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CDDB0F226C55547006CF9F5 /* Stardew_Library_RootUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stardew_Library_RootUITests.swift; sourceTree = "<group>"; };
+		3CDDB0F426C55547006CF9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CDDB0FA26C558B8006CF9F5 /* NavigationBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarColor.swift; sourceTree = "<group>"; };
 		3CFCA78C26B982C300058BDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3CFCA78E26B9837C00058BDF /* chicken.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chicken.gif; sourceTree = "<group>"; };
+		3CFCDAFB26CBC81800BC6E7C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		3CFCDAFD26CBD6AF00BC6E7C /* dogicabold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dogicabold.ttf; sourceTree = "<group>"; };
+		3CFCDAFF26CBD70800BC6E7C /* dogicabold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dogicabold.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3CD58BBB26B1468E007F89A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CDDB0ED26C55547006CF9F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -97,8 +118,7 @@
 		3C5166F726B163A0008342CB /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				3C51670626B169DB008342CB /* dogica.otf */,
-				3C51670426B16972008342CB /* dogicapixel.ttf */,
+				3CFCDAFD26CBD6AF00BC6E7C /* dogicabold.ttf */,
 				3C5166F826B163A5008342CB /* pixel.ttf */,
 				3C9BAF5326B1C9B80097CB06 /* Font.swift */,
 			);
@@ -109,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				3C5166FE26B164EB008342CB /* ColourPalette.swift */,
+				3CDDB0FA26C558B8006CF9F5 /* NavigationBarColor.swift */,
 			);
 			path = Colour;
 			sourceTree = "<group>";
@@ -168,6 +189,7 @@
 		3CD58BB526B1468E007F89A6 = {
 			isa = PBXGroup;
 			children = (
+				3CFCDAFA26CBC80B00BC6E7C /* Search */,
 				3C87259326BBC7F700C0ECE5 /* Data */,
 				3C51671726B1A663008342CB /* Scenes */,
 				3C51671026B1A56B008342CB /* Views */,
@@ -175,6 +197,7 @@
 				3C5166FD26B164C7008342CB /* Colour */,
 				3C5166F726B163A0008342CB /* Fonts */,
 				3CD58BC026B1468E007F89A6 /* Stardew_Library_Root */,
+				3CDDB0F126C55547006CF9F5 /* Stardew_Library_RootUITests */,
 				3CD58BBF26B1468E007F89A6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -183,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				3CD58BBE26B1468E007F89A6 /* Stardew_Library_Root.app */,
+				3CDDB0F026C55547006CF9F5 /* Stardew_Library_RootUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,9 +214,9 @@
 		3CD58BC026B1468E007F89A6 /* Stardew_Library_Root */ = {
 			isa = PBXGroup;
 			children = (
-				3C51670826B19561008342CB /* dogicapixel.otf */,
 				3CD58BC126B1468E007F89A6 /* Stardew_Library_RootApp.swift */,
 				3CD58BC326B1468E007F89A6 /* ContentView.swift */,
+				3CFCDAFF26CBD70800BC6E7C /* dogicabold.ttf */,
 				3C5166F526B16389008342CB /* pixel.ttf */,
 				3CD58BC526B14690007F89A6 /* Assets.xcassets */,
 				3CD58BCA26B14690007F89A6 /* Info.plist */,
@@ -207,6 +231,23 @@
 				3CD58BC826B14690007F89A6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3CDDB0F126C55547006CF9F5 /* Stardew_Library_RootUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CDDB0F226C55547006CF9F5 /* Stardew_Library_RootUITests.swift */,
+				3CDDB0F426C55547006CF9F5 /* Info.plist */,
+			);
+			path = Stardew_Library_RootUITests;
+			sourceTree = "<group>";
+		};
+		3CFCDAFA26CBC80B00BC6E7C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				3CFCDAFB26CBC81800BC6E7C /* SearchBar.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +270,24 @@
 			productReference = 3CD58BBE26B1468E007F89A6 /* Stardew_Library_Root.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3CDDB0EF26C55547006CF9F5 /* Stardew_Library_RootUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CDDB0F926C55547006CF9F5 /* Build configuration list for PBXNativeTarget "Stardew_Library_RootUITests" */;
+			buildPhases = (
+				3CDDB0EC26C55547006CF9F5 /* Sources */,
+				3CDDB0ED26C55547006CF9F5 /* Frameworks */,
+				3CDDB0EE26C55547006CF9F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CDDB0F626C55547006CF9F5 /* PBXTargetDependency */,
+			);
+			name = Stardew_Library_RootUITests;
+			productName = Stardew_Library_RootUITests;
+			productReference = 3CDDB0F026C55547006CF9F5 /* Stardew_Library_RootUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -240,6 +299,10 @@
 				TargetAttributes = {
 					3CD58BBD26B1468E007F89A6 = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					3CDDB0EF26C55547006CF9F5 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 3CD58BBD26B1468E007F89A6;
 					};
 				};
 			};
@@ -257,6 +320,7 @@
 			projectRoot = "";
 			targets = (
 				3CD58BBD26B1468E007F89A6 /* Stardew_Library_Root */,
+				3CDDB0EF26C55547006CF9F5 /* Stardew_Library_RootUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -266,13 +330,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C51670726B169DB008342CB /* dogica.otf in Resources */,
-				3C51670526B16972008342CB /* dogicapixel.ttf in Resources */,
 				3CD58BC926B14690007F89A6 /* Preview Assets.xcassets in Resources */,
-				3C51670926B19561008342CB /* dogicapixel.otf in Resources */,
 				3CD58BC626B14690007F89A6 /* Assets.xcassets in Resources */,
 				3CFCA78F26B9837C00058BDF /* chicken.gif in Resources */,
 				3C5166F626B16389008342CB /* pixel.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CDDB0EE26C55547006CF9F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,11 +369,13 @@
 				3C630A2126C2BDC7003C7C16 /* CookingView.swift in Sources */,
 				3C630A1F26C2BCFC003C7C16 /* CookingDetailView.swift in Sources */,
 				3C87259C26BBDD7F00C0ECE5 /* ItemsView.swift in Sources */,
+				3CFCDAFC26CBC81800BC6E7C /* SearchBar.swift in Sources */,
 				3C51671626B1A635008342CB /* OnboardingCardView.swift in Sources */,
 				3C8725A626BC003900C0ECE5 /* MoreButtonView.swift in Sources */,
 				3C8725A026BBE38D00C0ECE5 /* ItemShippedDetailView.swift in Sources */,
 				3CD58BC426B1468E007F89A6 /* ContentView.swift in Sources */,
 				3CD58BC226B1468E007F89A6 /* Stardew_Library_RootApp.swift in Sources */,
+				3CDDB0FB26C558B8006CF9F5 /* NavigationBarColor.swift in Sources */,
 				3C51671926B1A682008342CB /* OnboardingView.swift in Sources */,
 				3C630A1926C2B62F003C7C16 /* MineralsDetailView.swift in Sources */,
 				3C630A0D26C2840E003C7C16 /* ArtefactsView.swift in Sources */,
@@ -313,7 +383,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3CDDB0EC26C55547006CF9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDDB0F326C55547006CF9F5 /* Stardew_Library_RootUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CDDB0F626C55547006CF9F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CD58BBD26B1468E007F89A6 /* Stardew_Library_Root */;
+			targetProxy = 3CDDB0F526C55547006CF9F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3CD58BCB26B14690007F89A6 /* Debug */ = {
@@ -474,6 +560,42 @@
 			};
 			name = Release;
 		};
+		3CDDB0F726C55547006CF9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Stardew_Library_RootUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.openwindow.Stardew-Library-RootUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Stardew_Library_Root;
+			};
+			name = Debug;
+		};
+		3CDDB0F826C55547006CF9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Stardew_Library_RootUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.openwindow.Stardew-Library-RootUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Stardew_Library_Root;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -491,6 +613,15 @@
 			buildConfigurations = (
 				3CD58BCE26B14690007F89A6 /* Debug */,
 				3CD58BCF26B14690007F89A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CDDB0F926C55547006CF9F5 /* Build configuration list for PBXNativeTarget "Stardew_Library_RootUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CDDB0F726C55547006CF9F5 /* Debug */,
+				3CDDB0F826C55547006CF9F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

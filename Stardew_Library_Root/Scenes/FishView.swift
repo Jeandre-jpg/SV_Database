@@ -10,10 +10,16 @@ import SwiftUI
 struct FishView : View {
     var fishes: [ItemsFishData] = testFishData
     
+    @State private var searchText = ""
+    
     var body: some View {
-        NavigationView {
-          
-            List(fishes) { fish in
+        
+        NavigationView{
+        
+            VStack(spacing: 20) {
+            SearchBar(text: $searchText)
+                .padding(.top, 20)
+            List(fishes.filter({ searchText.isEmpty ? true : $0.name.contains(searchText) })) { fish in
                 FishShippedCell(fish: fish)
             }.toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -28,28 +34,10 @@ struct FishView : View {
                         
                     }
                }.navigationBarTitle("Fish", displayMode: .inline)
-            
-            
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-           HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100) {
-                    NavigationLink(destination: ArtefactsView()) {
-                        Image(systemName: "arrow.right.circle")
-                            .font(.title)
-                            .padding(100)
-                    }
-               
-           }
-       
-
-
-            }
-       
+        }.navigationBarColor(backgroundColor: .systemIndigo, tintColor: .white)
+           
         
-        
-      
-}
-        }
+    }
     }
 }
 

@@ -9,11 +9,14 @@ import SwiftUI
 
 struct ArtefactsView : View {
     var artefacts: [ArtefactsData] = testArtefactsData
-    
+    @State private var searchText = ""
     var body: some View {
-        NavigationView {
-          
-            List(artefacts) { artefact in
+        NavigationView{
+        
+            VStack(spacing: 20) {
+            SearchBar(text: $searchText)
+                .padding(.top, 20)
+            List(artefacts.filter({ searchText.isEmpty ? true : $0.name.contains(searchText) })) { artefact in
                 ArtefactsShippedCell(artefact: artefact)
             }.toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -28,29 +31,10 @@ struct ArtefactsView : View {
                         
                     }
                }.navigationBarTitle("Artefacts", displayMode: .inline)
-            
-            
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-           HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100) {
-                    NavigationLink(destination: MineralsView()) {
-                        Image(systemName: "arrow.right.circle")
-                            .font(.title)
-                            .padding(100)
-                    }
-               
-           }
-       
 
-
-            }
-       
-        
-        
-      
-}
-        }
+        }.navigationBarColor(backgroundColor: .systemIndigo, tintColor: .white)
     }
+}
 }
 
 #if DEBUG

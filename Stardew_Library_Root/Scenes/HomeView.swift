@@ -35,8 +35,7 @@ struct HomeView: View {
             
         }
         
-    
-            
+        
             
             cell(header: "The official unofficial Stardew Valley Database",color: Color(colour10))
             
@@ -127,29 +126,9 @@ struct HomeView: View {
                     
                 }
            }.navigationBarTitle("Home", displayMode: .inline)
-            
-    
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-           HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100) {
-                    NavigationLink(destination: SettingsView()) {
-                        Image(systemName: "arrow.right.circle")
-                            .font(.title)
-                            .padding(100)
-                    }
-               
-           }
-       
 
-
-            }
-       
-        
-        
-      
-}
     
-        }
+        }.navigationBarColor(backgroundColor: .systemIndigo, tintColor: .white)
 
     }
 }

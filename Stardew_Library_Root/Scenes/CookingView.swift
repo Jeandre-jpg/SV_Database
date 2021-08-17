@@ -10,10 +10,14 @@ import SwiftUI
 struct CookingView : View {
     var cookings: [CookingData] = testCookingData
     
+    @State private var searchText = ""
     var body: some View {
-        NavigationView {
-          
-            List(cookings) { cooking in
+        NavigationView{
+        
+            VStack(spacing: 20) {
+            SearchBar(text: $searchText)
+                .padding(.top, 20)
+            List(cookings.filter({ searchText.isEmpty ? true : $0.name.contains(searchText) })) { cooking in
                 CookingShippedCell(cooking: cooking)
             } .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -28,29 +32,12 @@ struct CookingView : View {
                         
                     }
                }.navigationBarTitle("Cooking", displayMode: .inline)
-            
-            
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-           HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100) {
-                    NavigationLink(destination: SettingsView()) {
-                        Image(systemName: "arrow.right.circle")
-                            .font(.title)
-                            .padding(100)
-                    }
-               
-           }
-       
-
-
-            }
        
         
-        
-      
-}
-        }
+
+        }.navigationBarColor(backgroundColor: .systemIndigo, tintColor: .white)
     }
+}
 }
 
 #if DEBUG

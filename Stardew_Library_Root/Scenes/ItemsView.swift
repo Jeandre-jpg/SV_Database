@@ -10,11 +10,14 @@ import SwiftUI
 
 struct ItemsView : View {
     var ships: [ItemsShippedData] = testData
-    
+    @State private var searchText = ""
     var body: some View {
-        NavigationView {
-          
-            List(ships) { ship in
+        NavigationView{
+        
+            VStack(spacing: 20) {
+            SearchBar(text: $searchText)
+                .padding(.top, 20)
+            List(ships.filter({ searchText.isEmpty ? true : $0.name.contains(searchText) })) { ship in
                 ItemsShippedCell(ship: ship)
             }.toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -29,31 +32,10 @@ struct ItemsView : View {
                         
                     }
                }.navigationBarTitle("Items Shipped", displayMode: .inline)
-            
-            
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-           HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100) {
-                    NavigationLink(destination: FishView()) {
-                        Image(systemName: "arrow.right.circle")
-                            .font(.title)
-                            .padding(100)
-                    }
-               
-           }
-       
-
-
-            }
-       
-        
-        
-      
-}
-        } 
+        } .navigationBarColor(backgroundColor: .systemIndigo, tintColor: .white)
     }
 }
-
+}
 
 #if DEBUG
 struct ItemsView_Previews : PreviewProvider {
