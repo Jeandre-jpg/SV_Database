@@ -1,4 +1,6 @@
-# Stardew Library
+<h1 align="center">
+  Stardew Library
+  </h1> 
 <h1 align="center">
   <br>
   <img src="https://user-images.githubusercontent.com/55391556/125683169-20d0a26d-dd3c-49f9-8c12-d2dfb08e5bf6.gif" alt="logo" width="200" height="200">
@@ -69,7 +71,7 @@ The application will be connected to the game, Stardew Valley. The app will show
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#installation">How To Install</a></li>
       </ul>
     </li>
     <li><a href="#features-and-functions">Features and Functions</a></li>
@@ -81,14 +83,15 @@ The application will be connected to the game, Stardew Valley. The app will show
       <ul>
         <li><a href="#ideation">Ideation</a></li>
         <li><a href="#wireframes">Wireframes</a></li>
-        <li><a href="#user-flow-diagram">User-Flow Diagram</a></li>
       </ul>
     </li>
     <li>
       <a href="#development-process">Development Process</a>
       <ul>
-        <li><a href="#implementation">Implementation</a></li>
-        <li><a href="#peer-reviews">Peer Reviews</a></li>
+          <li><a href="#user-flow-diagram">User-Flow Diagram</a></li>
+        <li><a href="#implementation">Implementation of Features</a></li>
+          <li><a href="#design-architecture">Design Architecture</a></li>
+        <li><a href="#unit-tests">Unit Tests</a></li>
       </ul>
     </li>
     <li><a href="#video-demonstration">Video Demonstration</a></li>
@@ -177,15 +180,77 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-* xCode
+#### Hardware requirements :
+
+You need a Intel based Mac for learning and developing apps using Swift programming language.
+
+* Intel based Mac Mini, MacBooks or iMacs
+
+* RAM : 4gb or more
+
+#### Software requirements :
+
+* iOS 14.1 or later
+
+* Swift 5.0 or later
+  ```sh
+  https://swift.org/download/
+  ```
+
+* Mac OS X 10.9 (Mavaricks or later)
+
+* Xcode 11.0 or later
   ```sh
   https://developer.apple.com/xcode/
   ```
+  
+#### Programing languages that one must know :
+
+* It would be great if you know a object oriented language like C++, Objective-C or Javascript.
 
 ### Installation
 Here are a couple of ways to clone this repo:
 
-1. xCode </br>
+1. Go to Source Control in Xcode and select Projectname -- master, then Configure...
+2. Configure your Xcode Git project settings.
+3. Select Remotes, then select the plus icon and choose Add Remote...
+4. In the Address field, paste the Git clone URL for your repo copied in the previous step. Select Add Remote, then select Done to finish creating the origin remote for your local Git repo.
+5. Add a remote to the local Git repo for your Xcode project to connect to Stardew_Library.
+6. Go to Source Control, Push..., enter the branchname on origin to push to, and select Push.
+7. Push your Xcode project to Stardew_Library.
+8. Xcode will push your project to your Stardew_Library Git repo.
+
+#### Installation UIColour
+
+You can use [UIColour](https://developer.apple.com/documentation/uikit/uicolor) to install `UIColour` by adding the proper description to your `ColourPalette.swift` file:
+
+```swift
+// swift-tools-version:4.0
+import SwiftUI
+
+func hexStringToUIColor (hex:String) -> UIColor {
+    var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+
+    if (cString.hasPrefix("#")) {
+        cString.remove(at: cString.startIndex)
+    }
+
+    if ((cString.count) != 6) {
+        return UIColor.gray
+    }
+
+    var rgbValue:UInt64 = 0
+    Scanner(string: cString).scanHexInt64(&rgbValue)
+
+    return UIColor(
+        red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+        green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+        blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+        alpha: CGFloat(1.0)
+    )
+}
+```
+Then run `swift build` whenever you get prepared.
 
 
 ## Features and Functions
@@ -197,11 +262,7 @@ Here are a couple of ways to clone this repo:
 ### Ideation
 
 <p align="center">
- <img src="https://user-images.githubusercontent.com/55391556/125685674-f0aad97d-845b-4249-98e7-9b275088f6e1.jpeg"/> 
-</p>
-
-<p align="center">
- <img src="https://user-images.githubusercontent.com/55391556/125685674-f0aad97d-845b-4249-98e7-9b275088f6e1.jpeg"/> 
+ <img src="https://user-images.githubusercontent.com/55391556/129929418-083f04d9-873c-431f-90f3-80d44ef5a5a4.jpg"/> 
 </p>
 
 ### Wireframes
@@ -210,6 +271,8 @@ Here are a couple of ways to clone this repo:
  <img src="https://user-images.githubusercontent.com/55391556/125696393-3b3e1820-a733-47c8-b20d-ca0559332f53.jpg"/> 
 </p>
 
+## Development Process
+
 ### User-Flow Diagram
 
 <p align="center">
@@ -217,27 +280,14 @@ Here are a couple of ways to clone this repo:
 </p>
    
 
-
-## Development Process
-
 ### Implementation
 
-## Peer Reviews
+## Design Architecture
 
-### Peer 1:
-
-
-### Peer 2:
-
-
-### Peer 3:
-
+## Unit Tests
 
 
 ## Video Demonstration
-
-#### First Draft Demonstration:
-
 
 
 #### Final Video Demonstration:
@@ -248,11 +298,29 @@ Here are a couple of ways to clone this repo:
 
 
 
-#### Download
+#### Download:
 
 
 
 ## Roadmap
+
+* **[SwiftUI](https://developer.apple.com/xcode/swiftui/)**
+* **[Official doc](https://developer.apple.com/documentation/swiftui)**
+  * **Essentials**
+    * **[Learn to Make Apps with SwiftUI](https://developer.apple.com/tutorials/swiftui/tutorials)**. Follow a series of guided tutorials to learn to make apps using SwiftUI and Xcode.
+  * **User Interface**
+    * **[Views and Controls](https://developer.apple.com/documentation/swiftui/views_and_controls)**. Present your content onscreen and handle user interactions.
+    * **[View Layout and Presentation](https://developer.apple.com/documentation/swiftui/view_layout_and_presentation)**. Combine views in stacks, generate groups and lists of views dynamically, and define view presentations and hierarchy.
+    * **[Drawing and Animation](https://developer.apple.com/documentation/swiftui/drawing_and_animation)**. Enhance your views with colors, shapes, and shadows, and customize animated transitions between view states.
+    * **[Framework Integration](https://developer.apple.com/documentation/swiftui/framework_integration)**. Integrate SwiftUI views into existing apps, and embed AppKit, UIKit, and WatchKit views and controllers into SwiftUI view hierarchies.
+  * **Data and Events**
+    * **[State and Data Flow](https://developer.apple.com/documentation/swiftui/state_and_data_flow)**. Control and respond to the flow of data and changes within your app’s models.
+    * **[Gestures](https://developer.apple.com/documentation/swiftui/gestures)**. Define interactions from taps, clicks, and swipes to fine-grained gestures.
+  * **Previews in Xcode**
+    * **[Previews](https://developer.apple.com/documentation/swiftui/previews)**. Generate dynamic, interactive previews of your custom views.
+  * **Develop Apps with SwiftUI**
+    * **[Develop Apps with SwiftUI](https://developer.apple.com/tutorials/app-dev-training)**. Create apps using SwiftUI and Xcode. Build Scrumdinger, an app that keeps track of daily scrums.
+
 
 ## Contributing
 
@@ -298,3 +366,7 @@ Project Link: [https://github.com/Jeandre-jpg/SV_Database](https://github.com/Je
 2. https://github.com/swiftgif/SwiftGif
 3. https://www.youtube.com/watch?v=Rm61mxcSD4U
 4. https://www.appcoda.com/swiftui-search-bar/
+5. https://github.com/Juanpe/About-SwiftUI/blob/master/README.md
+6. https://github.com/paololeonardi/WaterfallGrid
+7. https://fuckingswiftui.com/
+8. https://github.com/reverse-developer/SwiftUi-cheatsheet-GiSheet
