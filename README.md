@@ -370,3 +370,5 @@ Project Link: [https://github.com/Jeandre-jpg/SV_Database](https://github.com/Je
 6. https://github.com/paololeonardi/WaterfallGrid
 7. https://fuckingswiftui.com/
 8. https://github.com/reverse-developer/SwiftUi-cheatsheet-GiSheet
+9. https://www.hackingwithswift.com/plus/swiftui-special-effects/shadows-and-glows
+10. https://trailingclosure.com/custom-fonts-with-swiftui/
