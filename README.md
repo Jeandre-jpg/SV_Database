@@ -257,6 +257,18 @@ Then run `swift build` whenever you get prepared.
 
 ### Mockups
 
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/55391556/130015214-c7613a4c-cb39-4e23-a654-58268b6e5bd0.jpg"/> 
+</p>
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/55391556/130015262-57b6caea-15aa-4866-8bb4-e60fe2fbc70a.jpg"/> 
+</p>
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/55391556/130015301-7ca39203-3868-4cae-a510-f510a6d922d8.jpg"/> 
+</p>
+
 ## Concept Process
 
 ### Ideation
@@ -295,7 +307,6 @@ Then run `swift build` whenever you get prepared.
 
 
 #### Promotional Video:
-
 
 
 #### Download:
@@ -372,3 +383,4 @@ Project Link: [https://github.com/Jeandre-jpg/SV_Database](https://github.com/Je
 8. https://github.com/reverse-developer/SwiftUi-cheatsheet-GiSheet
 9. https://www.hackingwithswift.com/plus/swiftui-special-effects/shadows-and-glows
 10. https://trailingclosure.com/custom-fonts-with-swiftui/
+11. https://screenrant.com/stardew-valley-undertale-indie-games-pixel-art-cost/
