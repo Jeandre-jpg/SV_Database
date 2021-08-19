@@ -18,6 +18,8 @@ struct ArtefactsView : View {
                 .padding(.top, 20)
             List(artefacts.filter({ searchText.isEmpty ? true : $0.name.contains(searchText) })) { artefact in
                 ArtefactsShippedCell(artefact: artefact)
+            }.onAppear() {
+                UITableView.appearance().backgroundColor = UIColor.black
             }.toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 10) {
@@ -33,6 +35,7 @@ struct ArtefactsView : View {
                }.navigationBarTitle("Artefacts", displayMode: .inline)
 
         }.navigationBarColor(backgroundColor: .systemIndigo, tintColor: .white)
+            .background(Color.black)
     }
 }
 }

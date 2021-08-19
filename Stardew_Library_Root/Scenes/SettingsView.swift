@@ -32,6 +32,9 @@ struct SettingsView: View {
         .padding()
         .foregroundColor(.white)
             
+            CustomButton()
+                .padding(.vertical, 10)
+            
             cell(header: "App Description",color: Color(colour10), text: "The application will be connected to the game, Stardew Valley. The app will show some of the collectables within the game, from Items Shipped, Fish, Artefacts, Minerals and Cooking. This library system will also then show each categories information on a certain object.")
                 .frame(width: 400, height: 170, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             

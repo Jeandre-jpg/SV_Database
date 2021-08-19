@@ -16,34 +16,44 @@ struct MineralsDetailView: View {
     var location: String
     var used: String
     
-    var color5 = hexStringToUIColor(hex: "#9BA8F2")
+    var color8 = hexStringToUIColor(hex: "#16F2B4")
+    var colourBackground = hexStringToUIColor(hex: "#151626")
+
         
         var body: some View {
        
             ZStack{
-                Color(color5)
+                Color(colourBackground)
             .edgesIgnoringSafeArea(.all)
             
             VStack {
              
                 Image(image)
                     .renderingMode(.original).resizable().scaledToFit().frame(width: 150, height:150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .shadow(radius: 20)
+                    
+                    .frame(width: 250, height: 250, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .background(
+                        Color(color8)
+                            .ignoresSafeArea())
+                    .cornerRadius(150)
+                    .foregroundColor(.white)
+                    .shadow(color: .green, radius: 20)
+                
                     
                 Text(name)
-                    .font(Font.custom("pixel", size: 33))
-                    .padding()
+                    .font(Font.custom("pixel", size: 30))
                     .foregroundColor(.white)
+                
                 Text(info)
                     .font(.subheadline)
                     .foregroundColor(.white)
-                    .padding()
-               
-                
+                    .frame(width: 350, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                VStack {
                 HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100){
                     VStack(alignment: .leading, spacing: 10){
                         Text("Location")
-                            .font(Font.custom("pixel", size: 25))
+                            .RockSalt(style: .body, weight: .regular)
                             .foregroundColor(.white)
                         
                     Text(location)
@@ -52,12 +62,14 @@ struct MineralsDetailView: View {
                     }
                     VStack(alignment: .leading, spacing: 10){
                         Text("Sell Price")
-                            .font(Font.custom("pixel", size: 25))
+                            .RockSalt(style: .body, weight: .regular)
                             .foregroundColor(.white)
+                          
 
                     Text("50, 100")
                         .font(.subheadline)
                         .foregroundColor(.white)
+                        
                     }
                 }
                 
@@ -66,25 +78,33 @@ struct MineralsDetailView: View {
                 HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100){
                     VStack(alignment: .leading, spacing: 10){
                         Text("Used In")
-                            .font(Font.custom("pixel", size: 25))
+                            .RockSalt(style: .body, weight: .regular)
                             .foregroundColor(.white)
+                        
 
                     Text(used)
                         .font(.subheadline)
                         .foregroundColor(.white)
+                        
                     }
               
                 }
-                
-                Divider().background(Color.white)
+            
               
                
                 }.padding().navigationBarTitle(Text(name), displayMode: .inline)
-//            }
+            .padding()
+            .frame(width: 350, height: 400, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .background(
+                LinearGradient(gradient: Gradient(colors: [Color(colourBackground), Color(color8)]), startPoint: .top, endPoint: .bottom)
+                )
+            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            .cornerRadius(30)
+
         }
     }
 }
-
+}
 
     #if DEBUG
     struct MineralsDetailView_Previews : PreviewProvider {

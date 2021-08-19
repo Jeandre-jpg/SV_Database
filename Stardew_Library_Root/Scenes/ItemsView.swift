@@ -19,7 +19,11 @@ struct ItemsView : View {
                 .padding(.top, 20)
             List(ships.filter({ searchText.isEmpty ? true : $0.name.contains(searchText) })) { ship in
                 ItemsShippedCell(ship: ship)
-            }.toolbar {
+                  
+            }.onAppear() {
+                UITableView.appearance().backgroundColor = UIColor.black
+            }
+            .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 10) {
                         NavigationLink(destination: SettingsView()) {
@@ -33,6 +37,8 @@ struct ItemsView : View {
                     }
                }.navigationBarTitle("Items Shipped", displayMode: .inline)
         } .navigationBarColor(backgroundColor: .systemIndigo, tintColor: .white)
+            .background(Color.black)
+          
     }
 }
 }

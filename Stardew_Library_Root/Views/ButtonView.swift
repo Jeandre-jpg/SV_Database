@@ -24,8 +24,8 @@ struct ButtonView: View {
             }
                     .padding(.vertical, 10)
                     .padding(.horizontal, 16)
-                    .background(Capsule().strokeBorder(Color.black, lineWidth: 1.35))
-                    .accentColor(.black)
+                    .background(Capsule().strokeBorder(Color.white, lineWidth: 1.35))
+                    .accentColor(.white)
         })
     }
 }

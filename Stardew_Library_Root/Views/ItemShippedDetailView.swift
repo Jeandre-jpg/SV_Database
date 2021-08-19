@@ -19,101 +19,149 @@ struct ItemShippedDetailView: View {
     var recipes: String
     var crafting: String
     
-    var color1 = hexStringToUIColor(hex: "#EEE8E8")
+    var color1 = hexStringToUIColor(hex: "#3805F2")
+    var colourBackground = hexStringToUIColor(hex: "#151626")
+
+    var body: some View {
+   
+        ZStack{
+            Color(colourBackground)
+        .edgesIgnoringSafeArea(.all)
         
-        var body: some View {
-       
-            ZStack{
-                Color(color1)
-            .edgesIgnoringSafeArea(.all)
+            VStack(spacing:-10) {
+
+            Image(image)
+                .renderingMode(.original).resizable().scaledToFit().frame(width: 150, height:150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                .frame(width: 250, height: 250, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .background(
+                    Color(color1)
+                        .ignoresSafeArea())
+                .cornerRadius(150)
+                .foregroundColor(.white)
+                .shadow(color: .purple, radius: 20)
+            
+                
+            Text(name)
+                .font(Font.custom("pixel", size: 30))
+                .foregroundColor(.white)
+                .padding()
+            
+            Text(info)
+                .font(.subheadline)
+                .foregroundColor(.white)
+                .frame(width: 350, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                
             
             VStack {
-             
-                Image(image)
-                    .renderingMode(.original).resizable().scaledToFit().frame(width: 150, height:150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .shadow(radius: 20)
-                    
-                Text(name)
-                    .font(Font.custom("pixel", size: 33))
-                    .padding()
-                Text(info)
-                    .font(.subheadline)
-                    .padding()
-               
-                
-                HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100){
-                    VStack(alignment: .leading, spacing: 10){
-                        Text("Source")
-                            .font(Font.custom("pixel", size: 25))
-                        
-                    Text(source)
-                        .font(.subheadline)
-                    }
-                    VStack(alignment: .leading, spacing: 10){
-                        Text("Season")
-                            .font(Font.custom("pixel", size: 25))
-                        
-                    Text(season)
-                        .font(.subheadline)
-                    }
-                }
-                
-                Divider()
-                
-                HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100){
-                    VStack(alignment: .leading, spacing: 10){
-                        Text("Health")
-                            .font(Font.custom("pixel", size: 25))
-
-                    Text("13, 5")
-                        .font(.subheadline)
-                    }
-                    VStack(alignment: .leading, spacing: 10){
-                        Text("Sell Price")
-                            .font(Font.custom("pixel", size: 25))
-
-                    Text("50, 100")
-                        .font(.subheadline)
-                    }
-                }
-                
-                Divider()
-                
-                HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100){
-                    VStack(alignment: .leading, spacing: 10){
-                        Text("Bundles")
-                            .font(Font.custom("pixel", size: 25))
-                        
-                    Text(bundles)
-                        .font(.subheadline)
-                    }
-                    VStack(alignment: .leading, spacing: 10){
-                        Text("Recipes")
-                            .font(Font.custom("pixel", size: 25))
-                        
-                    Text(recipes)
-                        .font(.subheadline)
-                    }
-                  
-            
-                }
-                
-                Divider()
-                
+            HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100){
                 VStack(alignment: .leading, spacing: 10){
-                        Text("Crafting")
-                            .font(Font.custom("pixel", size: 25))
-                        
-                    Text(crafting)
-                        .font(.subheadline)
-                
-               
+                    Text("Source")
+                        .RockSalt(style: .body, weight: .regular)
+                        .foregroundColor(.white)
+                    
+                Text(source)
+                    .font(.subheadline)
+                    .foregroundColor(.white)
+                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 }
-                
-                }.padding().navigationBarTitle(Text(name), displayMode: .inline)
+                VStack(alignment: .leading, spacing: 10){
+                    Text("Season")
+                        .RockSalt(style: .body, weight: .regular)
+                        .font(Font.custom("pixel", size: 25))
+                        .foregroundColor(.white)
+                    
+                Text(season)
+                    .font(.subheadline)
+                    .foregroundColor(.white)
+                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                }
+            }
             
-        }
+            Divider().background(Color.white)
+            
+            HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100){
+                VStack(alignment: .leading, spacing: 10){
+                    Text("Health")
+                        .RockSalt(style: .body, weight: .regular)
+                        .font(Font.custom("pixel", size: 25))
+                        .foregroundColor(.white)
+
+                Text("13, 5")
+                    .font(.subheadline)
+                    .foregroundColor(.white)
+                }
+                VStack(alignment: .leading, spacing: 10){
+                    Text("Sell Price")
+                        .RockSalt(style: .body, weight: .regular)
+                        .font(Font.custom("pixel", size: 25))
+                        .foregroundColor(.white)
+
+                Text("50, 100")
+                    .font(.subheadline)
+                    .foregroundColor(.white)
+                }
+            }
+            
+            Divider().background(Color.white)
+            
+            HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 90){
+                VStack(alignment: .leading, spacing: 10){
+                    Text("Bundles")
+                        .RockSalt(style: .body, weight: .regular)
+                        .font(Font.custom("pixel", size: 25))
+                        .foregroundColor(.white)
+                    
+                Text(bundles)
+                    .font(.subheadline)
+                    .foregroundColor(.white)
+                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                }
+                VStack(alignment: .leading, spacing: 30){
+                    Text("Recipes")
+                        .RockSalt(style: .body, weight: .regular)
+                        .font(Font.custom("pixel", size: 25))
+                        .foregroundColor(.white)
+                        .frame(width: 110, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                Text(recipes)
+                    .font(.subheadline)
+                    .foregroundColor(.white)
+                }
+              
+        
+            }
+            
+           Divider().background(Color.gray)
+                VStack(alignment: .leading, spacing: 10){
+                    Text("Crafting")
+                        
+                        .RockSalt(style: .body, weight: .regular)
+                        .font(Font.custom("pixel", size: 25))
+                        .foregroundColor(.white)
+                    
+                Text(crafting)
+                    .font(.subheadline)
+                    .foregroundColor(.white)
+            
+                
+            
+          }.offset(x: -95)
+           
+           
+            }.padding().navigationBarTitle(Text(name), displayMode: .inline)
+            .padding()
+            .frame(width: 350, height: 450, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .background(
+                LinearGradient(gradient: Gradient(colors: [Color(colourBackground), Color(color1)]), startPoint: .top, endPoint: .bottom)
+                )
+            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            .cornerRadius(30)
+       }
     }
+}
 }
 
 

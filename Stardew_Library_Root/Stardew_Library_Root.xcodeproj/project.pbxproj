@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C5166F626B16389008342CB /* pixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C5166F526B16389008342CB /* pixel.ttf */; };
 		3C5166FF26B164EB008342CB /* ColourPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5166FE26B164EB008342CB /* ColourPalette.swift */; };
 		3C51670C26B19688008342CB /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51670B26B19688008342CB /* GifView.swift */; };
 		3C51671226B1A593008342CB /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51671126B1A592008342CB /* ButtonView.swift */; };
@@ -32,6 +31,9 @@
 		3C8725A626BC003900C0ECE5 /* MoreButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8725A526BC003900C0ECE5 /* MoreButtonView.swift */; };
 		3C9BAF5426B1C9B80097CB06 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BAF5326B1C9B80097CB06 /* Font.swift */; };
 		3C9BAF5626B1DCA60097CB06 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BAF5526B1DCA60097CB06 /* SettingsView.swift */; };
+		3CD097FA26CD466C00926094 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD097F926CD466C00926094 /* CustomButton.swift */; };
+		3CD097FC26CD877000926094 /* pixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CD097FB26CD877000926094 /* pixel.ttf */; };
+		3CD097FE26CD886500926094 /* RockSalt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CD097FD26CD886500926094 /* RockSalt-Regular.ttf */; };
 		3CD58BC226B1468E007F89A6 /* Stardew_Library_RootApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD58BC126B1468E007F89A6 /* Stardew_Library_RootApp.swift */; };
 		3CD58BC426B1468E007F89A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD58BC326B1468E007F89A6 /* ContentView.swift */; };
 		3CD58BC626B14690007F89A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD58BC526B14690007F89A6 /* Assets.xcassets */; };
@@ -54,8 +56,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3C5166F526B16389008342CB /* pixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = pixel.ttf; path = ../../../../Downloads/pixel.ttf; sourceTree = "<group>"; };
-		3C5166F826B163A5008342CB /* pixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pixel.ttf; sourceTree = "<group>"; };
 		3C5166FE26B164EB008342CB /* ColourPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColourPalette.swift; sourceTree = "<group>"; };
 		3C51670B26B19688008342CB /* GifView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = SOURCE_ROOT; };
 		3C51671126B1A592008342CB /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
@@ -80,6 +80,9 @@
 		3C8725A526BC003900C0ECE5 /* MoreButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreButtonView.swift; sourceTree = "<group>"; };
 		3C9BAF5326B1C9B80097CB06 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		3C9BAF5526B1DCA60097CB06 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3CD097F926CD466C00926094 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		3CD097FB26CD877000926094 /* pixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pixel.ttf; sourceTree = "<group>"; };
+		3CD097FD26CD886500926094 /* RockSalt-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RockSalt-Regular.ttf"; sourceTree = "<group>"; };
 		3CD58BBE26B1468E007F89A6 /* Stardew_Library_Root.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stardew_Library_Root.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD58BC126B1468E007F89A6 /* Stardew_Library_RootApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stardew_Library_RootApp.swift; sourceTree = "<group>"; };
 		3CD58BC326B1468E007F89A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,8 +96,6 @@
 		3CFCA78C26B982C300058BDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3CFCA78E26B9837C00058BDF /* chicken.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chicken.gif; sourceTree = "<group>"; };
 		3CFCDAFB26CBC81800BC6E7C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		3CFCDAFD26CBD6AF00BC6E7C /* dogicabold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dogicabold.ttf; sourceTree = "<group>"; };
-		3CFCDAFF26CBD70800BC6E7C /* dogicabold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dogicabold.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +119,8 @@
 		3C5166F726B163A0008342CB /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				3CFCDAFD26CBD6AF00BC6E7C /* dogicabold.ttf */,
-				3C5166F826B163A5008342CB /* pixel.ttf */,
+				3CD097FB26CD877000926094 /* pixel.ttf */,
+				3CD097FD26CD886500926094 /* RockSalt-Regular.ttf */,
 				3C9BAF5326B1C9B80097CB06 /* Font.swift */,
 			);
 			path = Fonts;
@@ -186,9 +187,18 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		3CD097F826CD464400926094 /* Custom Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				3CD097F926CD466C00926094 /* CustomButton.swift */,
+			);
+			path = "Custom Appearance";
+			sourceTree = "<group>";
+		};
 		3CD58BB526B1468E007F89A6 = {
 			isa = PBXGroup;
 			children = (
+				3CD097F826CD464400926094 /* Custom Appearance */,
 				3CFCDAFA26CBC80B00BC6E7C /* Search */,
 				3C87259326BBC7F700C0ECE5 /* Data */,
 				3C51671726B1A663008342CB /* Scenes */,
@@ -216,8 +226,6 @@
 			children = (
 				3CD58BC126B1468E007F89A6 /* Stardew_Library_RootApp.swift */,
 				3CD58BC326B1468E007F89A6 /* ContentView.swift */,
-				3CFCDAFF26CBD70800BC6E7C /* dogicabold.ttf */,
-				3C5166F526B16389008342CB /* pixel.ttf */,
 				3CD58BC526B14690007F89A6 /* Assets.xcassets */,
 				3CD58BCA26B14690007F89A6 /* Info.plist */,
 				3CD58BC726B14690007F89A6 /* Preview Content */,
@@ -333,7 +341,8 @@
 				3CD58BC926B14690007F89A6 /* Preview Assets.xcassets in Resources */,
 				3CD58BC626B14690007F89A6 /* Assets.xcassets in Resources */,
 				3CFCA78F26B9837C00058BDF /* chicken.gif in Resources */,
-				3C5166F626B16389008342CB /* pixel.ttf in Resources */,
+				3CD097FE26CD886500926094 /* RockSalt-Regular.ttf in Resources */,
+				3CD097FC26CD877000926094 /* pixel.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +374,7 @@
 				3C630A0126C27880003C7C16 /* FishView.swift in Sources */,
 				3CFCA78D26B982C300058BDF /* ViewController.swift in Sources */,
 				3C630A0326C278AD003C7C16 /* FishData.swift in Sources */,
+				3CD097FA26CD466C00926094 /* CustomButton.swift in Sources */,
 				3C51671226B1A593008342CB /* ButtonView.swift in Sources */,
 				3C630A2126C2BDC7003C7C16 /* CookingView.swift in Sources */,
 				3C630A1F26C2BCFC003C7C16 /* CookingDetailView.swift in Sources */,

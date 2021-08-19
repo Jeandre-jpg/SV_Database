@@ -19,6 +19,8 @@ struct MineralsView : View {
                 .padding(.top, 20)
             List(minerals.filter({ searchText.isEmpty ? true : $0.name.contains(searchText) })) { mineral in
                 MineralsShippedCell(mineral: mineral)
+            }.onAppear() {
+                UITableView.appearance().backgroundColor = UIColor.black
             }.toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 10) {
@@ -33,6 +35,8 @@ struct MineralsView : View {
                     }
                }.navigationBarTitle("Minerals", displayMode: .inline)
         }.navigationBarColor(backgroundColor: .systemIndigo, tintColor: .white)
+            .background(Color.black)
+          
     }
 }
 }

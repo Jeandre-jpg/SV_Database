@@ -19,17 +19,13 @@ struct OnboardingCardView: View {
         VStack(alignment: .center){
             
             
-            Image(systemName: image)
-                .renderingMode(.original)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 150, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 2, x: 2, y: 2)
+            LogoImage()
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                
             
             Text(title)
                 .foregroundColor(.orange)
-                .font(Font.custom("pixel", size: 33))
+                .RockSalt(style: .title2, weight: .bold)
                 .multilineTextAlignment(.center)
                 .frame(maxWidth: 480)
                 .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 2, x: 2, y: 2)
@@ -37,37 +33,25 @@ struct OnboardingCardView: View {
             
             
             Text(description)
-                .foregroundColor(.black)
+                .foregroundColor(.white)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 30)
-                .frame(maxWidth: 480)
-               
                 .padding()
-            
-            
-            
-            HStack(spacing: 20) {
-                
               
-                
-              
+            
+            
+        
                 
                 ButtonView()
                     .padding(.vertical, 20)
-                
-               
-        
-    }  .padding()
-            
-            
-            
+                  
             
            
              
-        }.background(Image("background_white")
+        }.background(Image("background_purple")
                         .resizable()
                         .frame(width: 400, height: 850)
-                        .aspectRatio(contentMode: .fill)
+                        .aspectRatio(contentMode: .fit)
                         .cornerRadius(20))
     
        
@@ -76,7 +60,19 @@ struct OnboardingCardView: View {
 
 struct OnboardingCardView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingCardView(image: "chicken", title: "Breathe new life into the Valley", description: "The official unofficial Stardew Valley Database").previewLayout(.fixed(width: 320, height: 640))
+        OnboardingCardView(image: "community", title: "Breathe new life into the Valley", description: "The official unofficial Stardew Valley Database").previewLayout(.fixed(width: 320, height: 640))
     }
 }
 
+struct LogoImage : View {
+    
+    var body: some View {
+        Image("stardew_valley_logo")
+            .resizable()
+            .frame(width: 220, height: 250)
+            .cornerRadius(30)
+            .shadow(radius: 30)
+            .aspectRatio(contentMode: .fill)
+            .edgesIgnoringSafeArea(.all)
+    }
+}

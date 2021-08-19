@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CookingView : View {
     var cookings: [CookingData] = testCookingData
-    
+  
     @State private var searchText = ""
     var body: some View {
         NavigationView{
@@ -17,9 +17,15 @@ struct CookingView : View {
             VStack(spacing: 20) {
             SearchBar(text: $searchText)
                 .padding(.top, 20)
+                
             List(cookings.filter({ searchText.isEmpty ? true : $0.name.contains(searchText) })) { cooking in
                 CookingShippedCell(cooking: cooking)
-            } .toolbar {
+                   
+                   
+            }
+            .onAppear() {
+                UITableView.appearance().backgroundColor = UIColor.black
+            }.toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 10) {
                         NavigationLink(destination: SettingsView()) {
@@ -36,7 +42,9 @@ struct CookingView : View {
         
 
         }.navigationBarColor(backgroundColor: .systemIndigo, tintColor: .white)
-    }
+            .background(Color.black)
+        }
+    
 }
 }
 

@@ -16,6 +16,7 @@ var colour8 = hexStringToUIColor(hex: "#F25C05")
 
 
 struct HomeView: View {
+    @State private var searchText = ""
     var body: some View {
        
         NavigationView {
@@ -25,29 +26,25 @@ struct HomeView: View {
         
         VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 20){
     
-        HStack(alignment: .lastTextBaseline){
+            VStack(alignment: .leading, spacing: 10){
             
             
-    Text("Welcome!").font(Font.custom("pixel", size: 33))
-        .padding()
+    Text("Welcome").font(Font.custom("pixel", size: 33))
         .foregroundColor(.white)
+        .padding(10)
+                
+              
+                SearchBar(text: $searchText)
+                    .padding(.top, 20)
+              
             
-            
-        }
-        
-        
-            
-            cell(header: "The official unofficial Stardew Valley Database",color: Color(colour10))
-            
-            VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 20) {
+                cell(header: "The official unofficial Stardew Valley Database",color: Color(colour10))
+                    .frame(width: 350, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
             
-            Text("The application will be connected to the game, Stardew Valley. The app will show some of the collectables within the game, from Items Shipped, Fish, Artefacts, Minerals and Cooking. This library system will also then show each categories information on a certain object.")
-                .font(Font.custom("dogicapixel", size: 15))
-                .frame(width: 350, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .foregroundColor(.white)
-            
-            }
+            }.frame(width: 350, height: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+        
+        
            
             VStack {
                        HStack {
@@ -56,7 +53,8 @@ struct HomeView: View {
                                 print("Items View Button Click")
                             }, label: {
                                 NavigationLink(destination: ItemsView()) {
-                                    cell(header: "Items Shipped 📦",color: Color(colour4))
+                                    cell1(image: Image("64px-ShippingBox"), header: "Items Shipped",color: Color(colour4), text: "Shipping allows the player to sell items.")
+                                    
                                  }
                             })
                                
@@ -66,10 +64,10 @@ struct HomeView: View {
                             
                            
                         Button(action: {
-                            print("Items View Button Click")
+                            print("Fish Button Click")
                         }, label: {
                             NavigationLink(destination: FishView()) {
-                                cell(header: "Fish 🐟",color: Color(colour5))
+                                cell2(image: Image("Cooking_Icon"),header: "Fish",color: Color(colour5), text:"Fish can be found in the ocean, lakes, rivers, and in certain levels of the mines.")
                              }
                         })
                        
@@ -82,7 +80,7 @@ struct HomeView: View {
                         }, label: {
                             NavigationLink(destination: ArtefactsView()) {
                                 
-                                cell(header: "Artefacts 🏺",color: Color(colour6))
+                                cell3(image: Image("Cooking_Icon"),header: "Artefacts",color: Color(colour6), text:"Can be donated to the Museum.")
                              }
                         })
                         
@@ -90,7 +88,7 @@ struct HomeView: View {
                             print("Items View Button Click")
                         }, label: {
                             NavigationLink(destination: MineralsView()) {
-                                cell(header: "Minerals 💎",color: Color(colour7))
+                                cell4(image: Image("Cooking_Icon"),header: "Minerals",color: Color(colour7), text: "Found in The Mines and the Skull Cavern.")
                              }
                         })
                         
@@ -99,15 +97,15 @@ struct HomeView: View {
                        }
                 
                 Button(action: {
-                    print("Items View Button Click")
+                    print("Cooking View Button Click")
                 }, label: {
                     NavigationLink(destination: CookingView()) {
-                        cell(header: "Cooking 🍽",color: Color(colour8))
-                     }.padding(10)
+                        cell5(image: Image("Cooking_Icon"),header: "Cooking",color: Color(colour8), text: "Cooking is a game mechanic.")
+                     }
                 })
                 
                
-                   }
+                   }.frame(width: 350, height: 400, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
            
                 
 }
@@ -141,21 +139,140 @@ struct HomeView_Previews: PreviewProvider {
     }
 }
 
-
 func cell(header: String, color: Color) -> some View {
     HStack {
         VStack(alignment: .leading) {
             Text(header)
-                .font(Font.custom("pixel", size: 23))
+                 .RockSalt(style: .body, weight: .bold)
         }
-        Spacer()
+       
     }
     
-    .padding(20)
+    .padding(7)
     .foregroundColor(.white)
     .background(color)
     .cornerRadius(10)
-    .padding(10)
+}
+
+func cell1(image: Image, header: String, color: Color, text: String) -> some View {
+    HStack {
+        VStack(alignment: .leading) {
+            Image("64px-ShippingBox")
+                .resizable()
+                .frame(width: 45, height: 45)
+                .aspectRatio(contentMode: .fill)
+                .edgesIgnoringSafeArea(.all)
+            Text(header)
+                 .RockSalt(style: .body, weight: .bold)
+            Text(text)
+                .font(.body)
+        }
+        Spacer()
+    }
+
+    .padding(7)
+    .foregroundColor(.white)
+    .background(color)
+    .cornerRadius(10)
+  
+
+}
+
+
+func cell2(image: Image, header: String, color: Color, text: String) -> some View {
+    HStack {
+        VStack(alignment: .leading) {
+            Image("Bream_Icon")
+                .resizable()
+                .frame(width: 45, height: 45)
+                .aspectRatio(contentMode: .fill)
+                .edgesIgnoringSafeArea(.all)
+            Text(header)
+                 .RockSalt(style: .body, weight: .bold)
+            Text(text)
+                .font(.body)
+        }
+        Spacer()
+    }
+   
+    .padding(7)
+    .foregroundColor(.white)
+    .background(color)
+    .cornerRadius(10)
+  
+
+}
+
+
+func cell3(image: Image, header: String, color: Color, text: String) -> some View {
+    HStack {
+        VStack(alignment: .leading) {
+            Image("Ancient_Sword")
+                .resizable()
+                .frame(width: 45, height: 45)
+                .aspectRatio(contentMode: .fill)
+                .edgesIgnoringSafeArea(.all)
+            Text(header)
+                 .RockSalt(style: .body, weight: .bold)
+            Text(text)
+                .font(.body)
+        }
+        Spacer()
+    }
+  
+    .padding(7)
+    .foregroundColor(.white)
+    .background(color)
+    .cornerRadius(10)
+  
+
+}
+
+
+func cell4(image: Image, header: String, color: Color, text: String) -> some View {
+    HStack {
+        VStack(alignment: .leading) {
+            Image("Ancient_Sword")
+                .resizable()
+                .frame(width: 45, height: 45)
+                .aspectRatio(contentMode: .fill)
+                .edgesIgnoringSafeArea(.all)
+            Text(header)
+                 .RockSalt(style: .body, weight: .bold)
+            Text(text)
+                .font(.body)
+        }
+        Spacer()
+    }
+   
+    .padding(7)
+    .foregroundColor(.white)
+    .background(color)
+    .cornerRadius(10)
+  
+
+}
+func cell5(image: Image, header: String, color: Color, text: String) -> some View {
+    HStack {
+        VStack(alignment: .leading) {
+            Image("Cooking_Icon")
+                .resizable()
+                .frame(width: 45, height: 45)
+                .aspectRatio(contentMode: .fill)
+                .edgesIgnoringSafeArea(.all)
+            Text(header)
+                 .RockSalt(style: .body, weight: .bold)
+            Text(text)
+                .font(.body)
+        }
+        Spacer()
+    }
+    .padding(7)
+    .foregroundColor(.white)
+    .background(color)
+    .cornerRadius(10)
+  
+
 }
 
 struct BackgroundImageMoon : View {

@@ -20,47 +20,62 @@ struct FishDetailView: View {
     var behaviour: String
     var weather: String
     
-    var color5 = hexStringToUIColor(hex: "#8806BF")
+    var colourBackground = hexStringToUIColor(hex: "#151626")
+
         
         var body: some View {
        
             ZStack{
-                Color(color5)
+                Color(colourBackground)
             .edgesIgnoringSafeArea(.all)
             
-            VStack {
-             
+                VStack(spacing:-1) {
+    
                 Image(image)
                     .renderingMode(.original).resizable().scaledToFit().frame(width: 150, height:150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .shadow(radius: 20)
+                    
+                    .frame(width: 250, height: 250, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .background(
+                        Color(color2)
+                            .ignoresSafeArea())
+                    .cornerRadius(150)
+                    .foregroundColor(.white)
+                    .shadow(color: .blue, radius: 20)
+                
                     
                 Text(name)
-                    .font(Font.custom("pixel", size: 33))
-                    .padding()
+                    .font(Font.custom("pixel", size: 30))
                     .foregroundColor(.white)
+                
                 Text(info)
                     .font(.subheadline)
                     .foregroundColor(.white)
-                    .padding()
+                    .frame(width: 350, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                    
                 
+                VStack {
                 HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100){
                     VStack(alignment: .leading, spacing: 10){
                         Text("Location")
-                            .font(Font.custom("pixel", size: 25))
+                            .RockSalt(style: .body, weight: .regular)
                             .foregroundColor(.white)
                         
                     Text(location)
                         .font(.subheadline)
                         .foregroundColor(.white)
+                        .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     }
                     VStack(alignment: .leading, spacing: 10){
                         Text("Season")
+                            .RockSalt(style: .body, weight: .regular)
                             .font(Font.custom("pixel", size: 25))
                             .foregroundColor(.white)
                         
                     Text(season)
                         .font(.subheadline)
                         .foregroundColor(.white)
+                        .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     }
                 }
                 
@@ -69,6 +84,7 @@ struct FishDetailView: View {
                 HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100){
                     VStack(alignment: .leading, spacing: 10){
                         Text("Health")
+                            .RockSalt(style: .body, weight: .regular)
                             .font(Font.custom("pixel", size: 25))
                             .foregroundColor(.white)
 
@@ -78,6 +94,7 @@ struct FishDetailView: View {
                     }
                     VStack(alignment: .leading, spacing: 10){
                         Text("Sell Price")
+                            .RockSalt(style: .body, weight: .regular)
                             .font(Font.custom("pixel", size: 25))
                             .foregroundColor(.white)
 
@@ -89,20 +106,25 @@ struct FishDetailView: View {
                 
                 Divider().background(Color.white)
                 
-                HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100){
+                HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 90){
                     VStack(alignment: .leading, spacing: 10){
                         Text("Bundles")
+                            .RockSalt(style: .body, weight: .regular)
                             .font(Font.custom("pixel", size: 25))
                             .foregroundColor(.white)
                         
                     Text(bundles)
                         .font(.subheadline)
                         .foregroundColor(.white)
+                        .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        
                     }
-                    VStack(alignment: .leading, spacing: 10){
-                        Text("Behaviour and Difficulty")
+                    VStack(alignment: .leading, spacing: 30){
+                        Text("Behaviour")
+                            .RockSalt(style: .body, weight: .regular)
                             .font(Font.custom("pixel", size: 25))
                             .foregroundColor(.white)
+                            .frame(width: 110, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                     Text(behaviour)
                         .font(.subheadline)
@@ -112,11 +134,11 @@ struct FishDetailView: View {
             
                 }
                 
-               Divider().background(Color.white)
-//                HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 100){
-                
-                VStack(alignment: .leading, spacing: 10){
+               Divider().background(Color.gray)
+                    VStack(alignment: .leading, spacing: 10){
                         Text("Weather")
+                            
+                            .RockSalt(style: .body, weight: .regular)
                             .font(Font.custom("pixel", size: 25))
                             .foregroundColor(.white)
                         
@@ -124,12 +146,20 @@ struct FishDetailView: View {
                         .font(.subheadline)
                         .foregroundColor(.white)
                 
-               
-                }
+                    
                 
+              }.offset(x: -95)
+               
                
                 }.padding().navigationBarTitle(Text(name), displayMode: .inline)
-//            }
+                .padding()
+                .frame(width: 350, height: 450, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .background(
+                    LinearGradient(gradient: Gradient(colors: [Color(colourBackground), Color(color2)]), startPoint: .top, endPoint: .bottom)
+                    )
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .cornerRadius(30)
+           }
         }
     }
 }
@@ -138,7 +168,7 @@ struct FishDetailView: View {
     #if DEBUG
     struct FishDetailView_Previews : PreviewProvider {
         static var previews: some View {
-            FishDetailView(image: "Pufferfish_Icon", name: "Pufferfish",  info: "Inflates when threatened.", location: "Ocean, Ginger Island oceans", season: "Summer (All Seasons on Ginger Island)", time: "12pm – 4pm", sellprice: [200, 600], bundles: "Specialty Fish Bundle", behaviour: "80 floater", weather: "Sun")
+            FishDetailView(image: "Pufferfish_Icon", name: "Pufferfish",  info: "Inflates when threatened.", location: "Ocean, Ginger Island oceans", season: "Summer", time: "12pm – 4pm", sellprice: [200, 600], bundles: "Specialty Fish Bundle", behaviour: "80 floater", weather: "Sun")
         }
     }
     #endif

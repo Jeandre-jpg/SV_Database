@@ -19,6 +19,7 @@ struct OnboardingView: View {
             .padding(.vertical, 20)
             .padding(.horizontal, 20)
         .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+        .cornerRadius(30)
         
        
     }
