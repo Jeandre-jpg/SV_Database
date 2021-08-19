@@ -296,8 +296,15 @@ Then run `swift build` whenever you get prepared.
 
 ## Design Architecture
 
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/55391556/130031124-251869a8-f5b6-451f-a5b4-3e4e75a8cbe4.jpg"/> 
+</p>
+
 ## Unit Tests
 
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/55391556/130039057-9c152bb2-43b3-4a70-bb26-943f47303715.jpg"/> 
+</p>
 
 ## Video Demonstration
 
@@ -308,10 +315,12 @@ Then run `swift build` whenever you get prepared.
 
 #### Promotional Video:
 
+  <a href="https://photos.app.goo.gl/wmdmCt8p7Y3HXz3T7">View Promotional Video</a>
+
 
 #### Download:
 
-
+ <a href="https://github.com/Jeandre-jpg/Stardew_Library.git">Download Project</a>
 
 ## Roadmap
 
