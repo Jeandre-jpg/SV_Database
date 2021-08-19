@@ -232,7 +232,7 @@ func cell3(image: Image, header: String, color: Color, text: String) -> some Vie
 func cell4(image: Image, header: String, color: Color, text: String) -> some View {
     HStack {
         VStack(alignment: .leading) {
-            Image("Ancient_Sword")
+            Image("Diamond_Icon")
                 .resizable()
                 .frame(width: 45, height: 45)
                 .aspectRatio(contentMode: .fill)
