@@ -311,11 +311,11 @@ Then run `swift build` whenever you get prepared.
 
 #### Final Video Demonstration:
 
-
+ <a href="https://drive.google.com/file/d/1ZczdueQvhXw3ocHKI79DVXMECqIMFTfs/view?usp=sharing">View Demonstration Video</a>
 
 #### Promotional Video:
 
-  <a href="https://photos.app.goo.gl/wmdmCt8p7Y3HXz3T7">View Promotional Video</a>
+  <a href="https://drive.google.com/file/d/1Mk78gk7POrO1VEZyRILLaYCEuHRAUoyo/view?usp=sharing">View Promotional Video</a>
 
 
 #### Download:
